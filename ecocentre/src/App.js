@@ -29,6 +29,13 @@ function App() {
       <Stroy />
       <Recycle />
       <SecondBanner />
+      <BannerTitle
+        title={"플라스틱히어로의 뜻"}
+        ftext={"일상에서 사용하는 생활 플라스틱 AI 회수로봇인 "}
+        stext={"플라스틱히어로는 환경오염이 심각한 지구에서 "}
+        ttext={"영웅이 된다는 의미를 가지고 있습니다."}
+        btnhide={false}
+      />
     </div>
   );
 }
