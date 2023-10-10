@@ -182,6 +182,10 @@ $font-NanumSquare: "NanumSquare";
     cursor: pointer;
   }
 }
+// Banner Title
+.banner-title.bg {
+  background-color: #f9fafb;
+}
 
 // Story
 .story {
@@ -434,6 +438,188 @@ $font-NanumSquare: "NanumSquare";
       img {
         width: 100%;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+// PlasticHero
+.hero {
+  width: 100%;
+  padding: 0 40px 249px;
+  .hero-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .hero-title {
+      padding-top: 150px;
+      h4 {
+        font-size: 30px;
+        font-family: $font-Pretendard;
+        font-weight: 700;
+        color: #19984b;
+      }
+      p {
+        font-size: 30px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        line-height: 42px;
+        margin-top: 15px;
+        span {
+          color: #19984b;
+        }
+      }
+    }
+    .content {
+      .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        .content-small {
+          width: 400px;
+          height: 487px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #19984b;
+          border-radius: 15px;
+          span {
+            font-size: 25px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            text-align: center;
+            color: #fff;
+            line-height: 43px;
+            pointer-events: none;
+          }
+          img {
+            width: 40%;
+            object-fit: cover;
+          }
+        }
+        .content-big {
+          width: 680px;
+          height: 487px;
+          border-radius: 15px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .content-image {
+          width: 100%;
+          height: 650px;
+          overflow: hidden;
+          @include flexCenter();
+          border-radius: 15px;
+          img {
+            width: 150%;
+            object-fit: cover;
+          }
+        }
+      }
+      .ai-robot {
+        width: 100%;
+        h5 {
+          width: 100%;
+          font-size: 42px;
+          font-family: $font-Pretendard;
+          font-weight: bold;
+          text-align: center;
+          padding: 30px 0;
+        }
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 27px;
+          font-family: $font-NanumSquare;
+          font-weight: 500;
+          color: #333;
+          line-height: 50px;
+        }
+        .btn {
+          width: 100%;
+          @include flexCenter();
+          gap: 100px;
+          padding: 50px 0;
+          button {
+            font-size: 18px;
+            font-family: $font-NanumSquare;
+            font-weight: 700;
+            border: 2px solid #333;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+      .first-footer {
+        width: 100%;
+        height: 500px;
+        background-color: #f9fafb;
+        border-radius: 15px;
+        margin-top: 50px;
+      }
+    }
+    .hero-five {
+      display: flex;
+      margin-top: 150px;
+      justify-content: space-between;
+
+      .hero-as {
+        width: 700px;
+        background-color: #f9fafb;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 80px;
+        padding: 50px 30px;
+        pointer-events: none;
+        .as-inner {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .as-image {
+            width: 120px;
+            margin-right: 50px;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .as-content {
+            strong {
+              display: block;
+              font-size: 22px;
+              font-family: $font-NanumSquare;
+              font-weight: 900;
+              color: #19984b;
+              margin-bottom: 20px;
+            }
+            ul {
+              width: 100%;
+              list-style: none;
+              li {
+                font-size: 16px;
+                font-family: $font-NanumSquare;
+                font-weight: 700;
+                margin-bottom: 5px;
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

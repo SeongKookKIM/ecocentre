@@ -1,6 +1,6 @@
 import React from "react";
-import RecycleLeft from "../components/RecycleLeft";
-import RecycleRight from "../components/RecycleRight";
+import RecycleLeft from "../components/recycle/RecycleLeft";
+import RecycleRight from "../components/recycle/RecycleRight";
 
 function Recycle() {
   return (

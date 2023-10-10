@@ -5,6 +5,7 @@ import BannerTitle from "./components/BannerTitle";
 import Stroy from "./section/Stroy";
 import Recycle from "./section/Recycle";
 import SecondBanner from "./section/SecondBanner";
+import PlasticHero from "./section/PlasticHero";
 
 function App() {
   function setScreenSize() {
@@ -25,6 +26,7 @@ function App() {
         stext={"재생산하는 리사이클링 사업과 이를 위한 플랫폼 제공으로 "}
         ttext={"탄소중립 세상을 만들고자 합니다"}
         btnhide={true}
+        bg={""}
       />
       <Stroy />
       <Recycle />
@@ -35,7 +37,9 @@ function App() {
         stext={"플라스틱히어로는 환경오염이 심각한 지구에서 "}
         ttext={"영웅이 된다는 의미를 가지고 있습니다."}
         btnhide={false}
+        bg={"bg"}
       />
+      <PlasticHero />
     </div>
   );
 }

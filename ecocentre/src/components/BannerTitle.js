@@ -1,8 +1,8 @@
 import React from "react";
 
-function BannerTitle({ title, ftext, stext, ttext, btnhide }) {
+function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
   return (
-    <section className="banner-title">
+    <section className={`banner-title ${bg}`}>
       <h2>{title}</h2>
       <p>
         {ftext}
