@@ -9,6 +9,7 @@ import PlasticHero from "./section/PlasticHero";
 import ThirdBanner from "./section/ThirdBanner";
 import Application from "./section/Application";
 import Esg from "./section/Esg";
+import News from "./section/News";
 
 function App() {
   function setScreenSize() {
@@ -74,6 +75,7 @@ function App() {
         bg={"bg"}
       />
       <Esg />
+      <News />
     </div>
   );
 }

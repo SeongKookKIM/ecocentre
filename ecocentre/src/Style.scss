@@ -640,25 +640,29 @@ $font-NanumSquare: "NanumSquare";
   position: relative;
   overflow: hidden;
   .bg {
+    width: 100%;
     height: 100%;
+    position: relative;
     img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    .main-wrapper {
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2049194677871149) 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
-  .main-wrapper {
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    background: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2049194677871149) 100%
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+
   .banner-content {
     position: absolute;
     z-index: 10;
@@ -1368,7 +1372,7 @@ $font-NanumSquare: "NanumSquare";
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 50px;
         .donation {
           width: 100%;
           display: block;
@@ -1430,6 +1434,117 @@ $font-NanumSquare: "NanumSquare";
             }
           }
         }
+      }
+    }
+  }
+}
+
+// NEWS
+.news {
+  width: 100%;
+  padding: 200px 40px 249px;
+  background-color: #f9fafb;
+  .news-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .news-title {
+      p {
+        font-size: 18px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        color: #19984b;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 42px;
+        line-height: 56px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        pointer-events: none;
+        span {
+          color: #19984b;
+        }
+      }
+    }
+    .news-list {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      gap: 50px;
+      button {
+        font-size: 18px;
+        font-family: $font-NanumSquare;
+        font-weight: 700;
+        background-color: #d3d3d3;
+        color: #333;
+        border: none;
+        outline: none;
+        padding: 6px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      button.active {
+        background-color: #19984b;
+        color: #fff;
+      }
+    }
+    .news-content {
+      width: 100%;
+      margin-top: 50px;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          width: 330px;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 15px;
+          overflow: hidden;
+          background-color: white;
+          box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+          img {
+            height: 60%;
+            object-fit: cover;
+          }
+          .news-text {
+            width: 100%;
+            height: 40%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5 {
+              font-size: 28px;
+              font-family: $font-NanumSquare;
+              font-weight: 800;
+            }
+            span {
+              font-size: 16px;
+              font-family: $font-NanumSquare;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .more-btn {
+      margin-top: 50px;
+      button {
+        font-size: 20px;
+        font-family: $font-NanumSquare;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: white;
+        border: none;
+        outline: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
       }
     }
   }
