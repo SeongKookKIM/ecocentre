@@ -626,7 +626,6 @@ $font-NanumSquare: "NanumSquare";
 }
 
 // ThirdBanner
-// Second-Banner
 .third-banner {
   width: 100%;
   height: 750px;
@@ -675,6 +674,243 @@ $font-NanumSquare: "NanumSquare";
       font-weight: 400;
       margin-top: 20px;
       line-height: 38px;
+    }
+  }
+}
+
+// Application
+.app {
+  width: 100%;
+  padding: 0 40px 249px;
+  pointer-events: none;
+  .app-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .app-first {
+      width: 100%;
+      padding: 100px 0;
+
+      h4 {
+        font-size: 30px;
+        font-family: $font-Pretendard;
+        font-weight: 700;
+        color: #19984b;
+      }
+      img {
+        width: 100px;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 30px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        line-height: 42px;
+        margin-top: 15px;
+        span {
+          color: #19984b;
+        }
+      }
+      .first-iamge {
+        width: 100%;
+        height: 850px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        div {
+          width: 390px;
+          height: 670px;
+          background-color: #666666;
+          position: absolute;
+          border-radius: 10px;
+        }
+        .one {
+          bottom: 0;
+        }
+        .two {
+          right: 0;
+          top: -100px;
+        }
+        .first-content {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: none;
+          height: auto;
+          p {
+            font-size: 20px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+    .app-second {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 100px 0;
+      background-color: #f9fafb;
+      .second-title {
+        max-width: 1140px;
+        margin: 0 auto;
+        h4 {
+          font-size: 30px;
+          font-family: $font-Pretendard;
+          font-weight: 700;
+          color: #19984b;
+        }
+        p {
+          font-size: 30px;
+          font-family: $font-NanumSquare;
+          font-weight: 800;
+          line-height: 42px;
+          margin-top: 15px;
+          span {
+            color: #19984b;
+          }
+        }
+      }
+      //
+      .second-list {
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 100px;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .img {
+              width: 130px;
+              height: 150px;
+              @include flexCenter();
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+            .content {
+              pointer-events: none;
+              p {
+                font-size: 22px;
+                font-family: $font-Pretendard;
+                font-weight: 800;
+                color: #19984b;
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                  display: inline-block;
+                  margin: 0;
+                  margin-right: 3px;
+                  font-size: 22px;
+                  display: inline-block;
+                }
+              }
+              span {
+                display: block;
+                font-size: 18px;
+                font-family: $font-Pretendard;
+                font-weight: 800;
+                margin-top: 30px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .app-third {
+      width: 100%;
+      padding: 100px 0;
+      margin-top: 704px;
+      .third-title {
+        h4 {
+          font-size: 30px;
+          font-family: $font-Pretendard;
+          font-weight: 700;
+          color: #19984b;
+        }
+        img {
+          width: 100px;
+          margin-top: 15px;
+        }
+        p {
+          font-size: 30px;
+          font-family: $font-NanumSquare;
+          font-weight: 800;
+          line-height: 42px;
+          margin-top: 15px;
+          span {
+            color: #19984b;
+          }
+        }
+      }
+      .third-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        .txt {
+          font-size: 20px;
+          font-family: $font-NanumSquare;
+          font-weight: 800;
+          line-height: 32px;
+          p {
+            margin-top: 150px;
+          }
+        }
+        .phone-img {
+          width: 390px;
+          height: 670px;
+          background-color: #333;
+        }
+      }
+      position: relative;
+      .third-list {
+        width: 100%;
+        position: absolute;
+        bottom: 150px;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
+            img {
+              width: 70px;
+              object-fit: cover;
+            }
+            span {
+              font-size: 18px;
+              font-family: $font-NanumSquare;
+              font-weight: 700;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }

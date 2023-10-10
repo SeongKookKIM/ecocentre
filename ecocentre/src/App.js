@@ -7,6 +7,7 @@ import Recycle from "./section/Recycle";
 import SecondBanner from "./section/SecondBanner";
 import PlasticHero from "./section/PlasticHero";
 import ThirdBanner from "./section/ThirdBanner";
+import Application from "./section/Application";
 
 function App() {
   function setScreenSize() {
@@ -50,6 +51,7 @@ function App() {
         btnhide={false}
         bg={"bg"}
       />
+      <Application />
     </div>
   );
 }
