@@ -17,6 +17,9 @@ function ThirdBanner() {
           탈중앙화 애플리케이션
         </span>
       </div>
+      <div className="arrow">
+        <img src="/assets/icon/scroll.png" alt="scroll" />
+      </div>
     </div>
   );
 }

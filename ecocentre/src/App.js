@@ -8,6 +8,7 @@ import SecondBanner from "./section/SecondBanner";
 import PlasticHero from "./section/PlasticHero";
 import ThirdBanner from "./section/ThirdBanner";
 import Application from "./section/Application";
+import Esg from "./section/Esg";
 
 function App() {
   function setScreenSize() {
@@ -32,7 +33,12 @@ function App() {
       />
       <Stroy />
       <Recycle />
-      <SecondBanner />
+      <SecondBanner
+        title={"플라스틱 히어로"}
+        fTxt={"이젠 버리지 말고 "}
+        sTxt={"플라스틱히어로가 되어주세요"}
+        src={"/assets/image/ai-robot.png"}
+      />
       <BannerTitle
         title={"플라스틱히어로의 뜻"}
         ftext={"일상에서 사용하는 생활 플라스틱 AI 회수로봇인 "}
@@ -52,6 +58,22 @@ function App() {
         bg={"bg"}
       />
       <Application />
+      <SecondBanner
+        title={"ESG DATA"}
+        fTxt={"플라스틱 히어로 ai로봇"}
+        sTxt={"탄소 절감 효과"}
+        src={""}
+        bg={"esg-banner"}
+      />
+      <BannerTitle
+        title={"ESG 경영"}
+        ftext={"플라스틱히어로 AI 로봇을 시작으로 기업이 먼저 "}
+        stext={"기후, 환경에 변화에 대응하여 사회에 긍정적 영향을 주고 "}
+        ttext={"기업브랜드 가치 상승과 지속 가능한 사업 가치를 창출합니다."}
+        btnhide={false}
+        bg={"bg"}
+      />
+      <Esg />
     </div>
   );
 }

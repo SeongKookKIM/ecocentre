@@ -1,20 +1,26 @@
 import React from "react";
 
-function SecondBanner() {
+function SecondBanner({ title, fTxt, sTxt, src, bg }) {
   return (
-    <div className="second-banner">
+    <div className={`second-banner ${bg}`}>
       <div className="main-wrapper"></div>
       <div className="main-inner">
         <div className="content">
-          <h2>플라스틱 히어로</h2>
+          <h2>{title}</h2>
           <p>
-            이젠 버리지 말고 <br />
-            플라스틱히어로가 되어주세요
+            {fTxt}
+            <br />
+            {sTxt}
           </p>
         </div>
-        <div className="img">
-          <img src="/assets/image/ai-robot.png" alt="robot" />
-        </div>
+        {src && (
+          <div className="img">
+            <img src={src} alt="robot" />
+          </div>
+        )}
+      </div>
+      <div className="arrow">
+        <img src="/assets/icon/scroll.png" alt="scroll" />
       </div>
     </div>
   );
