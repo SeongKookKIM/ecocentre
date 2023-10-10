@@ -6,6 +6,7 @@ import Stroy from "./section/Stroy";
 import Recycle from "./section/Recycle";
 import SecondBanner from "./section/SecondBanner";
 import PlasticHero from "./section/PlasticHero";
+import ThirdBanner from "./section/ThirdBanner";
 
 function App() {
   function setScreenSize() {
@@ -40,6 +41,15 @@ function App() {
         bg={"bg"}
       />
       <PlasticHero />
+      <ThirdBanner />
+      <BannerTitle
+        title={"플라스틱히어로 애플리케이션"}
+        ftext={"플라스틱 용기를 반납하고 환경포인트로 "}
+        stext={"보상을 받아 실생활에서 다양하게 현금처럼 사용 가능하고 "}
+        ttext={"NGO등 단체에 선택 기부가 가능합니다."}
+        btnhide={false}
+        bg={"bg"}
+      />
     </div>
   );
 }
