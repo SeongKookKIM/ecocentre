@@ -63,11 +63,26 @@ function Recycle() {
           </ul>
         </div>
 
-        <RecycleRight
-          img={"/assets/icon/regin.png"}
-          topTitle={"레진공정"}
-          contentImg={"/assets/image/07.jpg"}
-        />
+        <div className="recycle-right">
+          <div className="right-img">
+            <img src="/assets/image/07.jpg" alt="친환경" />
+          </div>
+          <div className="right-content">
+            <p className="top-title">
+              <img src="/assets/icon/regin.png" alt="recycle" />
+              플라스틱히어로 공정
+            </p>
+            <h2>
+              지속 가능한 플라스틱 소재를
+              <br />
+              개발 및 생산합니다.
+            </h2>
+            <p>
+              플라스틱히어로 AI로봇에 수거된 폐플라스틱으로 <br />
+              친환경 소재를 개발 및 생산합니다. <br />
+            </p>
+          </div>
+        </div>
         <div className="recycle-icon">
           <ul>
             <li>
@@ -93,7 +108,7 @@ function Recycle() {
 
         <RecycleLeft
           img={"/assets/icon/leef.png"}
-          topTitle={"재활용"}
+          topTitle={"플라스틱히어로 재활용"}
           contentImg={"/assets/image/08.jpg"}
         />
         <div className="recycle-icon">

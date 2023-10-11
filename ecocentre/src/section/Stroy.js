@@ -113,7 +113,7 @@ function Stroy() {
                   className="story-content"
                 >
                   <div className="story-img">
-                    <img src="/assets/image/esg.jpg" alt="coex" />
+                    <img src="/assets/image/esg.png" alt="coex" />
                   </div>
                   <div className="story-content">
                     <strong>플라스틱히어로 ESG경영포럼</strong>
