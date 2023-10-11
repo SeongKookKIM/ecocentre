@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Nav() {
+  const [logo, setLogo] = useState("/assets/image/logo-white.png");
+  const [textColor, setTextColor] = useState("");
+  const [user, setUser] = useState("/assets/image/user-white.png");
+  const [lang, setLang] = useState("/assets/image/lang-white.png");
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 10) {
+        setLogo("/assets/image/logo-color.png");
+        setTextColor("active");
+        setUser("/assets/image/user-black.png");
+        setLang("/assets/image/lang-black.png");
+      } else {
+        setLogo("/assets/image/logo-white.png");
+        setTextColor("");
+        setUser("/assets/image/user-white.png");
+        setLang("/assets/image/lang-white.png");
+      }
+    });
+  }, []);
+
   return (
-    <nav className="nav">
+    <nav className={`nav ${textColor}`}>
       <div className="nav-inner">
         <div className="logo-box">
-          <img src="/assets/image/logo-white.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <ul className="gnb">
           <li>
@@ -27,8 +47,8 @@ function Nav() {
             <span>FAQ</span>
           </li>
           <li className="nav-icon">
-            <img src="/assets/image/user-white.png" alt="user-white" />
-            <img src="/assets/image/lang-white.png" alt="lang-white" />
+            <img src={user} alt="user-white" />
+            <img src={lang} alt="lang-white" />
           </li>
         </ul>
       </div>

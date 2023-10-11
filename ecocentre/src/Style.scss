@@ -90,6 +90,19 @@ ul {
     }
   }
 }
+.nav.active {
+  border-bottom: 1px solid #f9fafb;
+  background-color: white;
+  .nav-inner {
+    .gnb {
+      li {
+        span {
+          color: #333;
+        }
+      }
+    }
+  }
+}
 
 // Main
 .main {
