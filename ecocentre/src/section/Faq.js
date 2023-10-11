@@ -40,7 +40,7 @@ function Faq() {
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              플라스틱을 투입할 떄 라멜 및 뚜껑 모두 제거 해야하나요?
+              플라스틱을 투입할 때 라멜 및 뚜껑 모두 제거 해야하나요?
             </Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

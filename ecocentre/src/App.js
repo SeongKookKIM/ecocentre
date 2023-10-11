@@ -11,6 +11,8 @@ import Application from "./section/Application";
 import Esg from "./section/Esg";
 import News from "./section/News";
 import Faq from "./section/Faq";
+import With from "./section/With";
+import WithBanner from "./section/WithBanner";
 
 function App() {
   function setScreenSize() {
@@ -78,6 +80,8 @@ function App() {
       <Esg />
       <News />
       <Faq />
+      <With />
+      <WithBanner />
     </div>
   );
 }
