@@ -36,6 +36,11 @@ $font-NanumSquare: "NanumSquare";
 :root {
   --vh: 100%;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 // Nav
 .nav {
@@ -265,6 +270,7 @@ $font-NanumSquare: "NanumSquare";
         height: 450px;
         display: flex;
         flex-direction: row nowrap;
+
         li {
           width: 100%;
           background-color: #f9fafb;
@@ -1529,6 +1535,80 @@ $font-NanumSquare: "NanumSquare";
               font-family: $font-NanumSquare;
               font-weight: 400;
             }
+          }
+        }
+      }
+    }
+    .more-btn {
+      margin-top: 50px;
+      button {
+        font-size: 20px;
+        font-family: $font-NanumSquare;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: white;
+        border: none;
+        outline: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// FAQ
+.faq {
+  width: 100%;
+  padding: 200px 40px 249px;
+  .faq-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .faq-title {
+      p {
+        font-size: 18px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        color: #19984b;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 42px;
+        line-height: 56px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        pointer-events: none;
+        span {
+          color: #19984b;
+        }
+      }
+    }
+    .accordion {
+      margin-top: 100px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      .accordion-item {
+        border: none;
+        border-bottom: 2px solid #d3d3d3;
+        .accordion-header {
+          --bs-accordion-active-bg: transparent;
+          --bs-accordion-btn-focus-border-color: transparent;
+          button {
+            box-shadow: none;
+            font-size: 22px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            color: black;
+            padding: 30px 20px;
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            font-size: 18px;
+            font-family: $font-NanumSquare;
+            font-weight: 600;
+            color: #333;
+            padding: 30px 20px;
           }
         }
       }

@@ -10,6 +10,7 @@ import ThirdBanner from "./section/ThirdBanner";
 import Application from "./section/Application";
 import Esg from "./section/Esg";
 import News from "./section/News";
+import Faq from "./section/Faq";
 
 function App() {
   function setScreenSize() {
@@ -76,6 +77,7 @@ function App() {
       />
       <Esg />
       <News />
+      <Faq />
     </div>
   );
 }
