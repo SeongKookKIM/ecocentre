@@ -23,7 +23,11 @@ function HeroSecond() {
           </span>
         </div>
       </div>
-      <div className="first-footer"></div>
+      <div className="first-footer">
+        <img src="/assets/image/5/01.png" alt="01" />
+        <img src="/assets/image/5/02.png" alt="02" />
+        <img src="/assets/image/5/03.png" alt="03" />
+      </div>
     </div>
   );
 }

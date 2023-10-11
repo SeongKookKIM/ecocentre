@@ -20,7 +20,9 @@ function AppThird() {
             환경포인트 기부
           </p>
         </div>
-        <div className="phone-img"></div>
+        <div className="phone-img">
+          <img src="/assets/image/6/02.png" alt="02" />
+        </div>
         <div className="txt">
           <p>
             과학, 기후, 기부 관련

@@ -14,29 +14,52 @@ function Recycle() {
 
         <RecycleRight
           img={"/assets/icon/bin.png"}
-          topTitle={"플라스틱 수거"}
+          topTitle={"플라스틱히어로 참여"}
           contentImg={"/assets/image/05.jpg"}
         />
         <div className="recycle-icon">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <img src="/assets/image/3/01.png" alt="01" />
+            </li>
+            <li>
+              <img src="/assets/image/3/02.png" alt="02" />
+            </li>
+            <li>
+              <img src="/assets/image/3/03.png" alt="03" />
+            </li>
+            <li>
+              <img src="/assets/image/3/04.png" alt="04" />
+            </li>
           </ul>
         </div>
 
-        <RecycleLeft
-          img={"/assets/icon/dump.png"}
-          topTitle={"플라스틱 운반"}
-          contentImg={"/assets/image/06.jpg"}
-        />
+        <div className="recycle-left">
+          <div className="left-content">
+            <p className="top-title">
+              <img src="/assets/icon/dump.png" alt="recycle" />
+              플라스틱히어로 수거
+            </p>
+            <h2>
+              시민 참여로 이루어진 폐 플라스틱은
+              <br />
+              에코센트레가 직접 회수합니다.
+            </h2>
+            <p>
+              실시간 모니터링을 통해 플라스틱 수거량을 확인하며, <br />
+              직접 방문하여 파쇄된 플라스틱을 수거합니다.
+            </p>
+          </div>
+          <div className="left-img">
+            <img src="/assets/image/06.jpg" alt="친환경" />
+          </div>
+        </div>
         <div className="recycle-icon">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
           </ul>
         </div>
 
@@ -47,12 +70,24 @@ function Recycle() {
         />
         <div className="recycle-icon">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <img src="/assets/image/4/01.png" alt="01" />
+            </li>
+            <li>
+              <img src="/assets/image/4/02.png" alt="02" />
+            </li>
+            <li>
+              <img src="/assets/image/4/03.png" alt="03" />
+            </li>
+            <li>
+              <img src="/assets/image/4/04.png" alt="04" />
+            </li>
+            <li>
+              <img src="/assets/image/4/05.png" alt="05" />
+            </li>
+            <li>
+              <img src="/assets/image/4/06.png" alt="06" />
+            </li>
           </ul>
         </div>
 
@@ -63,10 +98,10 @@ function Recycle() {
         />
         <div className="recycle-icon">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
+            <li style={{ backgroundColor: "limegreen" }}></li>
           </ul>
         </div>
       </div>

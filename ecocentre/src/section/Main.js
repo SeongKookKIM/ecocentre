@@ -6,7 +6,7 @@ function Main() {
       <div className="main-wrapper"></div>
       <div className="main-inner">
         <h2>
-          이젠 버리지말고 <br />
+          이젠 버리지 말고 <br />
           플라스틱히어로가 <br />
           되어주세요
         </h2>

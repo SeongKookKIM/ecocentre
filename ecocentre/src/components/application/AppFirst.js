@@ -11,9 +11,13 @@ function AppFirst() {
           플라스틱히어로 APP
         </p>
       </div>
-      <div className="first-iamge">
-        <div className="one"></div>
-        <div className="two"></div>
+      <div className="first-image">
+        <div className="one">
+          <img src="/assets/image/6/02.png" alt="02" />
+        </div>
+        <div className="two">
+          <img src="/assets/image/6/01.png" alt="01" />
+        </div>
         <div className="first-content">
           <p>
             플라스틱용기 반납 시 환경포인트로 보상받고, <br />

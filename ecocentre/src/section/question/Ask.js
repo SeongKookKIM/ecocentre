@@ -10,6 +10,7 @@ function Ask() {
         </strong>
         <div className="search-input">
           <input type="test" placeholder="무엇이든 검색하세요"></input>
+          <img src="/assets/image/8/search.svg" alt="search" />
         </div>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
