@@ -8,7 +8,7 @@ function WithBanner() {
           <div className="banner-content">
             <strong>
               "Be a <br />
-              Plastic Hero!
+              Plastic Hero!"
             </strong>
             <span>
               이제 버리지 말고 <br />

@@ -1768,3 +1768,98 @@ ul {
     }
   }
 }
+// Footer
+.footer {
+  width: 100%;
+  padding: 100px 40px 109px;
+  .footer-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    .info {
+      width: 100%;
+      border-bottom: 1px solid black;
+      ul {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        li {
+          p {
+            font-size: 16px;
+            font-family: $font-NanumSquare;
+            padding: 0 10px;
+            line-height: 14px;
+          }
+          &:first-child {
+            p {
+              padding-left: 0;
+            }
+          }
+        }
+        .fax {
+          p {
+            border-left: 2px solid #666666;
+            border-right: 2px solid #666666;
+          }
+        }
+      }
+      p {
+        font-size: 16px;
+        font-family: $font-NanumSquare;
+      }
+    }
+    .adress {
+      width: 100%;
+      padding-top: 1rem;
+      .company {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          font-size: 16px;
+          font-family: $font-NanumSquare;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-family: $font-NanumSquare;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+    .use-info {
+      width: 100%;
+      p {
+        font-size: 16px;
+        font-family: $font-NanumSquare;
+        margin: 0;
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+    .copy {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      span {
+        font-size: 16px;
+        font-family: $font-NanumSquare;
+      }
+      .sns {
+        display: flex;
+        gap: 20px;
+        li {
+          width: 30px;
+          height: 30px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}

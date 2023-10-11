@@ -13,6 +13,7 @@ import News from "./section/News";
 import Faq from "./section/Faq";
 import With from "./section/With";
 import WithBanner from "./section/WithBanner";
+import Footer from "./section/Footer";
 
 function App() {
   function setScreenSize() {
@@ -82,6 +83,7 @@ function App() {
       <Faq />
       <With />
       <WithBanner />
+      <Footer />
     </div>
   );
 }
