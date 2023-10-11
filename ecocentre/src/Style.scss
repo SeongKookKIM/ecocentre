@@ -166,7 +166,7 @@ ul {
 // Banner-Title
 .banner-title {
   width: 100%;
-  padding: 220px 40px 249px;
+  padding: 220px 0px 249px;
   @include flexCenter();
   flex-direction: column;
   h2 {
@@ -188,16 +188,140 @@ ul {
     margin: 16px auto 43px;
     pointer-events: none;
   }
-  button {
-    font-size: 20px;
-    font-family: $font-NanumSquare;
-    font-weight: 700;
-    background-color: transparent;
-    border: 2px solid #333;
-    outline: none;
-    padding: 18px 20px;
-    border-radius: 10px;
-    cursor: pointer;
+  .accordion {
+    width: 100%;
+    .card {
+      width: 100%;
+      @include flexCenter();
+      border: none;
+      .card-header {
+        background: transparent;
+        border: none;
+        button {
+          font-size: 20px;
+          font-family: $font-NanumSquare;
+          font-weight: 700;
+          background-color: transparent !important;
+          border: 2px solid #333;
+          outline: none;
+          padding: 18px 20px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+      .accordion-collapse {
+        width: 100%;
+        .card-body {
+          width: 100%;
+
+          .we {
+            width: 100%;
+            background-color: #f9fafb;
+            padding: 50px 0 30px;
+
+            .we-inner {
+              width: 100%;
+              max-width: 1140px;
+              margin: 0 auto;
+              .we-title {
+                h2 {
+                  font-size: 42px;
+                  line-height: 56px;
+                  font-family: $font-NanumSquare;
+                  font-weight: 800;
+                  pointer-events: none;
+                  color: black;
+                  span {
+                    color: #19984b;
+                  }
+                }
+                span.date {
+                  font-size: 16px;
+                  font-family: $font-NanumSquare;
+                  font-weight: 500;
+                  pointer-events: none;
+                }
+              }
+              .we-content {
+                width: 100%;
+                margin-top: 50px;
+                ul {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  border-top: 1px solid #d3d3d3;
+                  li {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 50px 0;
+                    border-bottom: 1px solid #d3d3d3;
+
+                    img {
+                      width: 100px;
+                    }
+                    .inner {
+                      margin-left: 50px;
+                      span {
+                        font-size: 16px;
+                        font-family: $font-NanumSquare;
+                        color: #666666;
+                      }
+                      p {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 42px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .we-wrapper {
+          width: 100%;
+          max-width: 1140px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          padding-top: 100px;
+          pointer-events: none;
+          .title {
+            p {
+              font-size: 42px;
+              text-align: start;
+              font-family: $font-NanumSquare;
+              font-weight: 800;
+              span {
+                color: #19984b;
+              }
+            }
+          }
+          .we-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 50px;
+            ul {
+              list-style: disc;
+              li {
+                font-size: 18px;
+                font-family: $font-NanumSquare;
+                font-weight: 600;
+                padding: 5px 0;
+                &:nth-child(1) {
+                  font-size: 35px;
+                  font-weight: 800;
+                  list-style: none;
+                  padding-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 // Banner Title
@@ -1792,6 +1916,7 @@ ul {
     .info {
       width: 100%;
       border-bottom: 1px solid black;
+      pointer-events: none;
       ul {
         width: 100%;
         display: flex;
@@ -1834,6 +1959,7 @@ ul {
           font-family: $font-NanumSquare;
           margin: 0;
           padding: 0;
+          pointer-events: none;
         }
       }
       p {
@@ -1841,6 +1967,7 @@ ul {
         font-family: $font-NanumSquare;
         margin: 0;
         padding: 10px 0;
+        pointer-events: none;
       }
     }
     .use-info {
@@ -1863,6 +1990,7 @@ ul {
       span {
         font-size: 16px;
         font-family: $font-NanumSquare;
+        pointer-events: none;
       }
       .sns {
         display: flex;
@@ -1871,6 +1999,141 @@ ul {
           width: 30px;
           height: 30px;
           background-color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// ASK
+.ask {
+  width: 100%;
+  padding: 100px 0px 109px;
+  .ask-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    strong {
+      display: block;
+      width: 100%;
+      font-size: 42px;
+      font-family: $font-NanumSquare;
+      font-weight: 800;
+      padding: 100px 0;
+      span {
+        color: #19984b;
+      }
+    }
+    .search-input {
+      width: 100%;
+      position: relative;
+      input {
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 15px 60px;
+        font-size: 24px;
+        color: #333;
+        font-family: $font-NanumSquare;
+        font-weight: 400;
+        border-bottom: 1px solid #d3d3d3;
+        &::placeholder {
+          font-size: 24px;
+          color: lightgray;
+          font-family: $font-NanumSquare;
+          font-weight: 400;
+        }
+      }
+    }
+    .accordion {
+      margin-top: 100px;
+      border: none;
+      .accordion-item {
+        border: none;
+        border-bottom: 2px solid #d3d3d3;
+        .accordion-header {
+          --bs-accordion-active-bg: transparent;
+          --bs-accordion-btn-focus-border-color: transparent;
+          button {
+            box-shadow: none;
+            font-size: 22px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            color: black;
+            padding: 30px 20px;
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            font-size: 18px;
+            font-family: $font-NanumSquare;
+            font-weight: 600;
+            color: #333;
+            padding: 30px 20px;
+          }
+        }
+      }
+    }
+    .more-btn {
+      width: 100%;
+      margin: 80px 0;
+      @include flexCenter();
+      button {
+        font-size: 20px;
+        font-family: $font-NanumSquare;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: white;
+        border: none;
+        outline: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .email {
+    width: 100%;
+    background-color: #f9fafb;
+    .email-inner {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 0;
+
+      .open-time {
+        pointer-events: none;
+        p {
+          font-size: 22px;
+          font-family: $font-NanumSquare;
+          font-weight: 700;
+          margin: 0;
+        }
+        span {
+          display: block;
+          font-size: 22px;
+          font-family: $font-NanumSquare;
+          font-weight: 700;
+          color: #666666;
+          margin-top: 5px;
+        }
+      }
+      .email-adress {
+        margin-top: 50px;
+        pointer-events: none;
+
+        span {
+          display: block;
+          font-size: 22px;
+          font-family: $font-NanumSquare;
+          font-weight: 700;
+          color: #666666;
+        }
+        p {
+          font-size: 22px;
+          font-family: $font-NanumSquare;
+          font-weight: 700;
+          margin: 0;
         }
       }
     }
