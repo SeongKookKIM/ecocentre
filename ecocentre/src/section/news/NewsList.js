@@ -45,14 +45,15 @@ function NewsList() {
             {selectNews === 0 &&
               newsData.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>
@@ -61,14 +62,15 @@ function NewsList() {
             {selectNews === 1 &&
               commonNews.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>
@@ -77,14 +79,15 @@ function NewsList() {
             {selectNews === 2 &&
               pressNews.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>

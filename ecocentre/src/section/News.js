@@ -8,7 +8,6 @@ function News() {
 
   let newsList = ["전체보기", "일반소식", "언론보도"];
 
-  const allNews = newsData.filter((item) => item.role === "all");
   const commonNews = newsData.filter((item) => item.role === "common");
   const pressNews = newsData.filter((item) => item.role === "press");
 
@@ -44,17 +43,17 @@ function News() {
         <div className="news-content">
           <ul>
             {selectNews === 0 &&
-              allNews.slice(0, newsToShow).map((it, i) => {
-                // 처음 3개 요소만 보이도록 slice를 사용
+              newsData.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>
@@ -63,14 +62,15 @@ function News() {
             {selectNews === 1 &&
               commonNews.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>
@@ -79,14 +79,15 @@ function News() {
             {selectNews === 2 &&
               pressNews.slice(0, newsToShow).map((it, i) => {
                 return (
-                  <li key={i}>
+                  <li
+                    key={i}
+                    onClick={() => {
+                      window.open(it.link, "_blank");
+                    }}
+                  >
                     <img src={it.src} alt="news" />
                     <div className="news-text">
-                      <h5>
-                        {it.titleFirst}
-                        <br />
-                        {it.titleSecond}
-                      </h5>
+                      <h5>{it.title}</h5>
                       <span>{it.date}</span>
                     </div>
                   </li>

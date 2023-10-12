@@ -7,7 +7,7 @@ import EsgFive from "../components/esg/EsgFive";
 
 function Esg() {
   return (
-    <serction className="esg">
+    <section className="esg">
       <div className="esg-inner">
         <EsgFirst />
         <EsgSecond />
@@ -15,7 +15,7 @@ function Esg() {
         <Esgfour />
         <EsgFive />
       </div>
-    </serction>
+    </section>
   );
 }
 
