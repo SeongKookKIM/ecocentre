@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 function HeroFour() {
+  const [check, setCheck] = useState(false);
+  const [active, setActive] = useState("");
+
+  function handlerCheck() {
+    setCheck(!check);
+
+    if (check) {
+      setActive("");
+    } else {
+      setActive("active");
+    }
+  }
+
   return (
     <div className="content">
       <div className="hero-title">
@@ -25,9 +38,56 @@ function HeroFour() {
           맞추어 변경이 가능합니다.
         </p>
         <div className="btn">
-          <button type="button">사양확인</button>
+          <button
+            type="button"
+            onClick={() => {
+              handlerCheck();
+            }}
+            className={active}
+          >
+            사양확인
+          </button>
           <button type="button">기기구매</button>
         </div>
+        {check && (
+          <div className="specification">
+            <strong>플라스틱히어로 AI로봇</strong>
+            <ul>
+              <li>
+                <p>크기(W*D*H)</p>
+                <span>960mm*750mm*1900</span>
+              </li>
+              <li>
+                <p>디스플레이</p>
+                <span>21"Touch Screen</span>
+              </li>
+              <li>
+                <p>투입가능자원</p>
+                <span>페트</span>
+              </li>
+              <li>
+                <p>무게</p>
+                <span>470KG</span>
+              </li>
+              <li>
+                <p>자원적재량</p>
+                <span>페트병 2,000개</span>
+              </li>
+              <li>
+                <p>회수용기</p>
+                <span>수거박스 2EA</span>
+              </li>
+              <li>
+                <p>방수 / 방진</p>
+                <span>생활방수 IP53</span>
+              </li>
+              <li>
+                <p>파쇄모터사양</p>
+                <span>3Phase 3hP(2200W)</span>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

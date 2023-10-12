@@ -708,6 +708,44 @@ ul {
             border-radius: 10px;
             cursor: pointer;
           }
+          button.active {
+            background-color: #333;
+            color: #fff;
+          }
+        }
+        .specification {
+          width: 100%;
+          padding: 50px 150px;
+          background-color: #f9fafb;
+          strong {
+            width: 100%;
+            font-size: 32px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+          }
+          ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            li {
+              width: 50%;
+              margin-bottom: 40px;
+              p {
+                font-size: 22px;
+                font-family: $font-NanumSquare;
+                font-weight: 800;
+                text-align: start;
+                margin: 0;
+                padding: 0;
+              }
+              span {
+                font-size: 18px;
+                font-family: $font-NanumSquare;
+                font-weight: 600;
+              }
+            }
+          }
         }
       }
       .first-footer {
