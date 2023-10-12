@@ -18,6 +18,7 @@ import { Route, Routes } from "react-router-dom";
 import Ask from "./section/question/Ask";
 import SubNav from "./components/SubNav";
 import NewsList from "./section/news/NewsList";
+import Send from "./components/Send";
 
 function App() {
   function setScreenSize() {
@@ -125,6 +126,7 @@ function App() {
         <Route path="*" element={<div>없는 페이지 404</div>}></Route>
       </Routes>
       <Footer />
+      <Send />
     </div>
   );
 }
