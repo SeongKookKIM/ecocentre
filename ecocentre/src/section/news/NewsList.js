@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 function NewsList() {
   const [selectNews, setSelectNews] = useState(0);
+  const [newsToShow, setNewsToShow] = useState(6);
 
   let newsList = ["전체보기", "일반소식", "언론보도"];
 
-  const allNews = newsData.filter((item) => item.role === "all");
   const commonNews = newsData.filter((item) => item.role === "common");
   const pressNews = newsData.filter((item) => item.role === "press");
 
@@ -31,6 +31,7 @@ function NewsList() {
                 key={idx}
                 onClick={() => {
                   setSelectNews(idx);
+                  setNewsToShow(6);
                 }}
                 className={idx === selectNews ? "active" : ""}
               >
@@ -42,7 +43,7 @@ function NewsList() {
         <div className="news-content">
           <ul>
             {selectNews === 0 &&
-              allNews.map((it, i) => {
+              newsData.slice(0, newsToShow).map((it, i) => {
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -58,7 +59,7 @@ function NewsList() {
                 );
               })}
             {selectNews === 1 &&
-              commonNews.map((it, i) => {
+              commonNews.slice(0, newsToShow).map((it, i) => {
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -74,7 +75,7 @@ function NewsList() {
                 );
               })}
             {selectNews === 2 &&
-              pressNews.map((it, i) => {
+              pressNews.slice(0, newsToShow).map((it, i) => {
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -95,7 +96,7 @@ function NewsList() {
           <button
             type="more"
             onClick={() => {
-              navigation("/news");
+              setNewsToShow((prevNewsToShow) => prevNewsToShow + 3);
             }}
           >
             더보기

@@ -7,7 +7,7 @@ import HeroFive from "../components/hero/HeroFive";
 
 function PlasticHero() {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero-inner">
         <HeroFirst />
         <HeroSecond />
@@ -15,7 +15,7 @@ function PlasticHero() {
         <HeroFour />
         <HeroFive />
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function News() {
   const [selectNews, setSelectNews] = useState(0);
+  const [newsToShow, setNewsToShow] = useState(3);
 
   let newsList = ["전체보기", "일반소식", "언론보도"];
 
@@ -14,7 +15,7 @@ function News() {
   let navigation = useNavigate();
 
   return (
-    <div className="news">
+    <section className="news">
       <div className="news-inner">
         <div className="news-title">
           <p>소식</p>
@@ -31,6 +32,7 @@ function News() {
                 key={idx}
                 onClick={() => {
                   setSelectNews(idx);
+                  setNewsToShow(3);
                 }}
                 className={idx === selectNews ? "active" : ""}
               >
@@ -42,7 +44,8 @@ function News() {
         <div className="news-content">
           <ul>
             {selectNews === 0 &&
-              allNews.map((it, i) => {
+              allNews.slice(0, newsToShow).map((it, i) => {
+                // 처음 3개 요소만 보이도록 slice를 사용
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -58,7 +61,7 @@ function News() {
                 );
               })}
             {selectNews === 1 &&
-              commonNews.map((it, i) => {
+              commonNews.slice(0, newsToShow).map((it, i) => {
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -74,7 +77,7 @@ function News() {
                 );
               })}
             {selectNews === 2 &&
-              pressNews.map((it, i) => {
+              pressNews.slice(0, newsToShow).map((it, i) => {
                 return (
                   <li key={i}>
                     <img src={it.src} alt="news" />
@@ -96,13 +99,14 @@ function News() {
             type="more"
             onClick={() => {
               navigation("/news");
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
             더보기
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

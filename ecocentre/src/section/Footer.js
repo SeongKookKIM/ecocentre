@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-inner">
         <div className="info">
           <ul>
@@ -35,17 +35,9 @@ function Footer() {
         </div>
         <div className="copy">
           <span>&copy; Copyright 2023 by Ecocentre</span>
-          <ul className="sns">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

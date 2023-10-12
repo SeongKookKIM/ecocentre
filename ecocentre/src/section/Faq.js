@@ -6,7 +6,7 @@ function Faq() {
   const navigation = useNavigate();
 
   return (
-    <div className="faq">
+    <section className="faq">
       <div className="faq-inner">
         <div className="faq-title">
           <p>FAQ</p>
@@ -96,7 +96,7 @@ function Faq() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

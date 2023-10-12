@@ -5,13 +5,13 @@ import AppThird from "../components/application/AppThird";
 
 function Application() {
   return (
-    <div className="app">
+    <section className="app">
       <div className="app-inner">
         <AppFirst />
         <AppSecond />
         <AppThird />
       </div>
-    </div>
+    </section>
   );
 }
 

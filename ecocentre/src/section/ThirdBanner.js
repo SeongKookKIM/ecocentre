@@ -2,7 +2,7 @@ import React from "react";
 
 function ThirdBanner() {
   return (
-    <div className="third-banner">
+    <section className="third-banner">
       <div className="bg">
         <img src="/assets/image/14.jpg" alt="14" />
         <div className="main-wrapper"></div>
@@ -20,7 +20,7 @@ function ThirdBanner() {
       <div className="arrow">
         <img src="/assets/icon/scroll.png" alt="scroll" />
       </div>
-    </div>
+    </section>
   );
 }
 

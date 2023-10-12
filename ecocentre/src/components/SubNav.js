@@ -5,7 +5,7 @@ function SubNav() {
   const navigation = useNavigate();
 
   return (
-    <nav className="nav active">
+    <nav className="nav active subnav">
       <div className="nav-inner">
         <div className="logo-box">
           <img
@@ -18,28 +18,40 @@ function SubNav() {
         </div>
         <ul className="gnb">
           <li>
-            <span>회사소개</span>
+            <span
+              onClick={() => {
+                navigation("/");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              Home
+            </span>
           </li>
           <li>
-            <span>플라스틱히어로</span>
+            <span
+              onClick={() => {
+                navigation("/news");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              소식
+            </span>
           </li>
           <li>
-            <span>App</span>
-          </li>
-          <li>
-            <span>ESG</span>
-          </li>
-          <li>
-            <span>소식</span>
-          </li>
-          <li>
-            <span>FAQ</span>
-          </li>
-          <li className="nav-icon">
-            <img src="/assets/image/user-black.png" alt="user-white" />
-            <img src="/assets/image/lang-black.png" alt="lang-white" />
+            <span
+              onClick={() => {
+                navigation("/ask");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              FAQ
+            </span>
           </li>
         </ul>
+        <div className="nav-icon">
+          <img src="/assets/image/user-black.png" alt="user-white" />
+          <img src="/assets/image/lang-black.png" alt="lang-white" />
+        </div>
       </div>
     </nav>
   );

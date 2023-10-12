@@ -2,7 +2,7 @@ import React from "react";
 
 function WithBanner() {
   return (
-    <div className="with-banner">
+    <section className="with-banner">
       <div className="bg-cover">
         <div className="banner-inner">
           <div className="banner-content">
@@ -17,7 +17,7 @@ function WithBanner() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

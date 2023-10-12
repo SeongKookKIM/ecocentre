@@ -2,7 +2,7 @@ import React from "react";
 
 function With() {
   return (
-    <div className="with">
+    <section className="with">
       <div className="with-inner">
         <div className="with-title">
           <p>함께하기</p>
@@ -30,7 +30,7 @@ function With() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
