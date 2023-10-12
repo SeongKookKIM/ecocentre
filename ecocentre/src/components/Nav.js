@@ -25,26 +25,74 @@ function Nav() {
     <nav className={`nav ${textColor}`}>
       <div className="nav-inner">
         <div className="logo-box">
-          <img src={logo} alt="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          />
         </div>
         <ul className="gnb">
           <li>
-            <span>회사소개</span>
+            <span
+              onClick={() => {
+                let intro = document.querySelector(".story");
+                intro.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              회사소개
+            </span>
           </li>
           <li>
-            <span>플라스틱히어로</span>
+            <span
+              onClick={() => {
+                let hero = document.querySelector(".second-banner");
+                hero.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              플라스틱히어로
+            </span>
           </li>
           <li>
-            <span>App</span>
+            <span
+              onClick={() => {
+                let app = document.querySelector(".third-banner");
+                app.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              App
+            </span>
           </li>
           <li>
-            <span>ESG</span>
+            <span
+              onClick={() => {
+                let esg = document.querySelector(".esg-banner");
+                esg.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              ESG
+            </span>
           </li>
           <li>
-            <span>소식</span>
+            <span
+              onClick={() => {
+                let news = document.querySelector(".news");
+                news.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              소식
+            </span>
           </li>
           <li>
-            <span>FAQ</span>
+            <span
+              onClick={() => {
+                let faq = document.querySelector(".faq");
+                faq.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              FAQ
+            </span>
           </li>
           <li className="nav-icon">
             <img src={user} alt="user-white" />

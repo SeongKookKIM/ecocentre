@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import newsData from "./news/data";
+import newsData from "./data";
 import { useNavigate } from "react-router-dom";
 
-function News() {
+function NewsList() {
   const [selectNews, setSelectNews] = useState(0);
 
   let newsList = ["전체보기", "일반소식", "언론보도"];
@@ -12,10 +12,9 @@ function News() {
   const pressNews = newsData.filter((item) => item.role === "press");
 
   let navigation = useNavigate();
-
   return (
-    <div className="news">
-      <div className="news-inner">
+    <div className="newslist">
+      <div className="newslist-inner">
         <div className="news-title">
           <p>소식</p>
           <h2>
@@ -23,6 +22,7 @@ function News() {
             확인하세요.
           </h2>
         </div>
+
         <div className="news-list">
           {newsList.map((list, idx) => {
             return (
@@ -106,4 +106,4 @@ function News() {
   );
 }
 
-export default News;
+export default NewsList;

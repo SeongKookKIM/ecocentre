@@ -16,6 +16,8 @@ import WithBanner from "./section/WithBanner";
 import Footer from "./section/Footer";
 import { Route, Routes } from "react-router-dom";
 import Ask from "./section/question/Ask";
+import SubNav from "./components/SubNav";
+import NewsList from "./section/news/NewsList";
 
 function App() {
   function setScreenSize() {
@@ -28,12 +30,12 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Nav />
               <Main />
               <BannerTitle
                 title={"우리가 하는 일"}
@@ -101,7 +103,26 @@ function App() {
             </>
           }
         ></Route>
-        <Route path="/ask" element={<Ask />}></Route>
+        <Route
+          path="/ask"
+          element={
+            <>
+              <SubNav />
+              <Ask />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/news"
+          element={
+            <>
+              <SubNav />
+              <NewsList />
+            </>
+          }
+        ></Route>
+
+        <Route path="*" element={<div>없는 페이지 404</div>}></Route>
       </Routes>
       <Footer />
     </div>

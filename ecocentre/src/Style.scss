@@ -62,6 +62,7 @@ ul {
       img {
         width: 100%;
         object-fit: cover;
+        cursor: pointer;
       }
     }
     .gnb {
@@ -1630,11 +1631,13 @@ ul {
 }
 
 // NEWS
-.news {
+.news,
+.newslist {
   width: 100%;
   padding: 200px 40px 249px;
   background-color: #f9fafb;
-  .news-inner {
+  .news-inner,
+  .newslist-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
@@ -1713,6 +1716,7 @@ ul {
               font-size: 28px;
               font-family: $font-NanumSquare;
               font-weight: 800;
+              line-height: 42px;
             }
             span {
               font-size: 16px;
@@ -2193,6 +2197,17 @@ ul {
           margin: 0;
         }
       }
+    }
+  }
+}
+
+// NewsList
+.newslist {
+  background-color: transparent;
+  .newslist-inner {
+    .more-btn {
+      @include flexCenter();
+      margin-top: 100px;
     }
   }
 }

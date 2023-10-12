@@ -1,7 +1,10 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import { useNavigate } from "react-router-dom";
 
 function Faq() {
+  const navigation = useNavigate();
+
   return (
     <div className="faq">
       <div className="faq-inner">
@@ -82,7 +85,15 @@ function Faq() {
           </Accordion.Item>
         </Accordion>
         <div className="more-btn">
-          <button type="more">더보기</button>
+          <button
+            type="more"
+            onClick={() => {
+              navigation("/ask");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            더보기
+          </button>
         </div>
       </div>
     </div>
