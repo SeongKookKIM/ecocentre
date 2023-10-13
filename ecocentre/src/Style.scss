@@ -13,7 +13,7 @@
   align-items: center;
 }
 @mixin tablet {
-  @media (max-width: 1140px) {
+  @media (max-width: 1250px) {
     @content;
   }
 }
@@ -51,6 +51,9 @@ ul {
   z-index: 9999;
   @include flexCenter();
   padding: 20px 0;
+  @include tablet {
+    display: none;
+  }
   .nav-inner {
     width: 100%;
     max-width: 1140px;
@@ -104,6 +107,127 @@ ul {
     }
   }
 }
+// Mobile-Nav
+.m-nav {
+  display: none;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 0;
+  @include tablet {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .m-nav-inner {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .logo-box {
+        width: 130px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .dropdown {
+        position: absolute;
+        left: 150px;
+        button {
+          display: flex;
+          align-items: center;
+          img {
+            width: 25px;
+            object-fit: cover;
+          }
+          &::after {
+            border-top: 0.5em solid;
+            border-right: 0.5em solid transparent;
+            border-bottom: 0;
+            border-left: 0.5em solid transparent;
+          }
+        }
+      }
+      button {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        svg {
+          width: 34px;
+          height: 34px;
+          fill: none;
+          stroke: white;
+          stroke-width: 3px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+      }
+    }
+  }
+}
+.m-nav.active {
+  background-color: white;
+  border-bottom: 1px solid #f9fafb;
+
+  .m-nav-inner {
+    .dropdown {
+      button {
+        &::after {
+          border-top: 0.5em solid black;
+          border-right: 0.5em solid transparent;
+          border-bottom: 0;
+          border-left: 0.5em solid transparent;
+        }
+      }
+    }
+    button {
+      svg {
+        stroke: black;
+        stroke-width: 3px;
+      }
+    }
+  }
+}
+.offcanvas.offcanvas-end {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: none;
+  .offcanvas-header {
+    img {
+      width: 130px;
+      object-fit: cover;
+    }
+    button {
+      transform: scale(1.4);
+    }
+  }
+  .offcanvas-body {
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      li {
+        font-size: 38px;
+        font-family: $font-NanumSquare;
+        font-weight: 800;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+}
+// Sub-nab
 .subnav {
   .nav-inner {
     .nav-icon {
@@ -902,13 +1026,14 @@ ul {
   width: 100%;
   padding: 0 40px 249px;
   pointer-events: none;
+
   .app-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
     .app-first {
       width: 100%;
-      padding: 100px 0;
+      padding: 100px 0 240px;
 
       h4 {
         font-size: 30px;
@@ -1102,14 +1227,17 @@ ul {
         .phone-img {
           width: 390px;
           height: 670px;
-          background-color: #333;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
         }
       }
       position: relative;
       .third-list {
         width: 100%;
         position: absolute;
-        bottom: 50px;
+        bottom: 150px;
         ul {
           width: 100%;
           display: flex;
@@ -2229,7 +2357,7 @@ ul {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  font-size: 26px;
+  font-size: 23px;
   font-family: $font-NanumSquare;
   font-weight: 800;
   background-color: white;
@@ -2246,6 +2374,7 @@ ul {
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
+  z-index: 99999;
 
   .modal-dialog {
     width: 100%;

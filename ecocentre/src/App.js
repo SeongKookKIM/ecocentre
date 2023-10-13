@@ -19,6 +19,7 @@ import Ask from "./section/question/Ask";
 import SubNav from "./components/SubNav";
 import NewsList from "./section/news/NewsList";
 import Send from "./components/Send";
+import Mnav from "./components/Mnav";
 
 function App() {
   function setScreenSize() {
@@ -37,6 +38,7 @@ function App() {
           element={
             <>
               <Nav />
+              <Mnav />
               <Main />
               <BannerTitle
                 title={"우리가 하는 일"}
@@ -123,7 +125,25 @@ function App() {
           }
         ></Route>
 
-        <Route path="*" element={<div>없는 페이지 404</div>}></Route>
+        <Route
+          path="*"
+          element={
+            <div
+              style={{
+                width: "100%",
+                height: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontSize: "42px",
+                fontWeight: "bold",
+                pointerEvents: "none",
+              }}
+            >
+              없는 페이지 404
+            </div>
+          }
+        ></Route>
       </Routes>
       <Footer />
       <Send />
