@@ -268,6 +268,11 @@ ul {
 
     position: absolute;
     top: 0;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+      gap: 20px;
+    }
 
     h2 {
       font-size: 56px;
@@ -276,10 +281,17 @@ ul {
       font-family: $font-NanumSquare;
       font-weight: 800;
       pointer-events: none;
+      @include tablet {
+        font-size: 42px;
+        line-height: 58px;
+      }
     }
     .app-btn {
       display: flex;
       gap: 30px;
+      @include tablet {
+        gap: 20px;
+      }
       button {
         font-size: 23px;
         font-family: $font-Pretendard;
@@ -293,8 +305,15 @@ ul {
         outline: none;
         border-radius: 10px;
         cursor: pointer;
+        @include tablet {
+          font-size: 21px;
+          padding: 6px 10px;
+        }
         img {
           width: 40px;
+          @include tablet {
+            width: 30px;
+          }
         }
       }
     }
@@ -307,6 +326,9 @@ ul {
   padding: 220px 0px 249px;
   @include flexCenter();
   flex-direction: column;
+  @include tablet {
+    padding: 100px 0px 100px;
+  }
   h2 {
     font-size: 20px;
     line-height: 60px;
@@ -325,6 +347,15 @@ ul {
     font-weight: 800;
     margin: 16px auto 43px;
     pointer-events: none;
+    @include tablet {
+      max-width: auto;
+      width: 80%;
+      font-size: 22px;
+      line-height: 42px;
+      .mobile {
+        display: none;
+      }
+    }
   }
   .accordion {
     width: 100%;
@@ -345,23 +376,35 @@ ul {
           padding: 18px 20px;
           border-radius: 10px;
           cursor: pointer;
+          @include tablet {
+            font-size: 18px;
+            padding: 14px 16px;
+          }
         }
       }
       .accordion-collapse {
         width: 100%;
         .card-body {
           width: 100%;
+          padding: 0;
 
           .we {
             width: 100%;
             background-color: #f9fafb;
             padding: 50px 0 30px;
             margin-top: 150px;
+            @include tablet {
+              padding: 100px 0 80px;
+            }
 
             .we-inner {
               width: 100%;
               max-width: 1140px;
               margin: 0 auto;
+              @include tablet {
+                max-width: auto;
+                width: 90%;
+              }
               .we-title {
                 h2 {
                   font-size: 42px;
@@ -373,12 +416,19 @@ ul {
                   span {
                     color: #19984b;
                   }
+                  @include tablet {
+                    font-size: 32px;
+                    line-height: 46px;
+                  }
                 }
                 span.date {
                   font-size: 16px;
                   font-family: $font-NanumSquare;
                   font-weight: 500;
                   pointer-events: none;
+                  @include tablet {
+                    font-size: 15px;
+                  }
                 }
               }
               .we-content {
@@ -389,27 +439,42 @@ ul {
                   display: flex;
                   flex-direction: column;
                   border-top: 1px solid #d3d3d3;
+
                   li {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     padding: 50px 0;
                     border-bottom: 1px solid #d3d3d3;
+                    @include tablet {
+                      padding: 40px 0;
+                    }
 
                     img {
                       width: 100px;
+                      object-fit: cover;
+                      @include tablet {
+                        width: 70px;
+                      }
                     }
                     .inner {
                       margin-left: 50px;
                       span {
+                        display: block;
                         font-size: 16px;
                         font-family: $font-NanumSquare;
                         color: #666666;
+                        margin-bottom: 10px;
                       }
                       p {
                         margin: 0;
                         padding: 0;
                         font-size: 42px;
+                        font-family: $font-NanumSquare;
+                        font-weight: 800;
+                        @include tablet {
+                          font-size: 37px;
+                        }
                       }
                     }
                   }
@@ -426,14 +491,25 @@ ul {
           justify-content: space-between;
           padding-top: 100px;
           pointer-events: none;
+          @include tablet {
+            max-width: auto;
+            width: 90%;
+            flex-direction: column;
+          }
           .title {
             p {
               font-size: 42px;
               text-align: start;
               font-family: $font-NanumSquare;
               font-weight: 800;
+              line-height: 56px;
+
               span {
                 color: #19984b;
+              }
+              @include tablet {
+                font-size: 32px;
+                line-height: 46px;
               }
             }
           }
@@ -454,6 +530,9 @@ ul {
                   font-weight: 800;
                   list-style: none;
                   padding-bottom: 20px;
+                  @include tablet {
+                    font-size: 30px;
+                  }
                 }
               }
             }
@@ -474,6 +553,9 @@ ul {
   padding: 220px 40px 249px;
   overflow: hidden;
   background-color: #f9fafb;
+  @include tablet {
+    padding: 100px 0px 149px;
+  }
 
   .story-inner {
     width: 100%;
@@ -481,8 +563,15 @@ ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+      flex-direction: column;
+    }
     .story-content {
       p {
+        margin: 0;
+        padding: 0;
         img {
           width: 20px;
           object-fit: cover;
@@ -494,8 +583,13 @@ ul {
         font-family: $font-NanumSquare;
         font-weight: 800;
         pointer-events: none;
+
         span {
           color: #19984b;
+        }
+        @include tablet {
+          font-size: 32px;
+          line-height: 46px;
         }
       }
       p {
@@ -505,12 +599,21 @@ ul {
         font-weight: 600;
         margin-top: 20px;
         pointer-events: none;
+        @include tablet {
+          font-size: 21px;
+          line-height: 31px;
+        }
       }
       .story-list {
         margin-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        @include tablet {
+          margin-top: 40px;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
         span {
           font-size: 24px;
           font-family: $font-Pretendard;
@@ -518,6 +621,13 @@ ul {
           color: rgba(0, 0, 0, 0.5);
           position: relative;
           cursor: pointer;
+          @include tablet {
+            font-size: 18px;
+            border: 1px solid #d3d3d3;
+            padding: 6px 10px;
+            border-radius: 7px;
+            background-color: white;
+          }
         }
         span.active {
           color: #333;
@@ -531,6 +641,13 @@ ul {
             top: 50%;
             transform: translateY(-50%);
             border-radius: 5px;
+            @include tablet {
+              display: none;
+            }
+          }
+          @include tablet {
+            background-color: #333;
+            color: #fff;
           }
         }
       }
@@ -540,12 +657,21 @@ ul {
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
+      @include tablet {
+        margin: 100px auto 0;
+        width: 600px;
+        height: 500px;
+      }
       ul {
         width: 550px;
         list-style: none;
         height: 450px;
         display: flex;
         flex-direction: row nowrap;
+        @include tablet {
+          width: 100%;
+          height: 100%;
+        }
 
         li {
           width: 100%;
@@ -555,6 +681,9 @@ ul {
               width: 100%;
               height: 350px;
               object-fit: cover;
+              @include tablet {
+                height: 400px;
+              }
             }
           }
           .story-content {
@@ -588,10 +717,18 @@ ul {
 .recycle {
   width: 100%;
   padding: 0 40px 249px;
+  @include tablet {
+    padding: 0 0 149px;
+  }
   .recycle-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+    }
+
     .recycle-left,
     .recycle-right {
       width: 100%;
@@ -599,8 +736,16 @@ ul {
       justify-content: space-between;
       align-items: center;
       margin-top: 250px;
+      @include tablet {
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .left-content,
       .right-content {
+        @include tablet {
+          width: 100%;
+        }
         p.top-title {
           display: flex;
           align-items: center;
@@ -624,6 +769,10 @@ ul {
           span {
             color: #19984b;
           }
+          @include tablet {
+            font-size: 32px;
+            line-height: 46px;
+          }
         }
         p {
           font-size: 20px;
@@ -632,6 +781,10 @@ ul {
           font-weight: 600;
           margin-top: 20px;
           pointer-events: none;
+          @include tablet {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
       }
       .left-img,
@@ -642,6 +795,11 @@ ul {
         @include flexCenter();
         border-radius: 10px;
         box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
+        @include tablet {
+          width: 600px;
+          height: 500px;
+          margin: 50px auto 0;
+        }
 
         img {
           height: 100%;
@@ -649,20 +807,41 @@ ul {
         }
       }
     }
+    .recycle-right {
+      @include tablet {
+        flex-direction: column-reverse;
+      }
+    }
 
     .recycle-icon {
       width: 100%;
       margin-top: 80px;
+      @include tablet {
+        margin-top: 50px;
+      }
       ul {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
+        @include tablet {
+          justify-content: center;
+          gap: 50px;
+          flex-wrap: wrap;
+        }
         li {
           width: 150px;
           height: 150px;
           border-radius: 50%;
+          @include tablet {
+            width: 100px;
+            height: 100px;
+          }
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -695,6 +874,10 @@ ul {
     gap: 0px;
     position: absolute;
     top: 0;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+    }
     .content {
       h2 {
         font-size: 56px;
@@ -703,6 +886,10 @@ ul {
         font-family: $font-NanumSquare;
         font-weight: 800;
         pointer-events: none;
+        @include tablet {
+          font-size: 42px;
+          line-height: 58px;
+        }
       }
       p {
         font-size: 22px;
@@ -720,6 +907,9 @@ ul {
         width: 100%;
         object-fit: cover;
       }
+      @include tablet {
+        width: 300px;
+      }
     }
   }
   .arrow {
@@ -736,10 +926,17 @@ ul {
 .hero {
   width: 100%;
   padding: 0 40px 249px;
+  @include tablet {
+    padding: 0 0 149px;
+  }
   .hero-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+    }
     .hero-title {
       padding-top: 150px;
       h4 {
@@ -774,6 +971,12 @@ ul {
           align-items: center;
           background-color: #19984b;
           border-radius: 15px;
+
+          @include tablet {
+            width: 45%;
+            height: auto;
+            aspect-ratio: 1/1;
+          }
           span {
             font-size: 25px;
             font-family: $font-NanumSquare;
@@ -782,10 +985,18 @@ ul {
             color: #fff;
             line-height: 43px;
             pointer-events: none;
+            @include tablet {
+              font-size: 18px;
+              line-height: 37px;
+              padding: 0 10px;
+            }
           }
           img {
             width: 40%;
             object-fit: cover;
+            @include tablet {
+              width: 30%;
+            }
           }
         }
         .content-big {
@@ -797,6 +1008,11 @@ ul {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          @include tablet {
+            width: 45%;
+            height: auto;
+            aspect-ratio: 1/1;
           }
         }
 
@@ -810,6 +1026,11 @@ ul {
             width: 150%;
             object-fit: cover;
           }
+          @include tablet {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+          }
         }
       }
       .ai-robot {
@@ -821,6 +1042,9 @@ ul {
           font-weight: bold;
           text-align: center;
           padding: 30px 0;
+          @include tablet {
+            font-size: 32px;
+          }
         }
         p {
           width: 100%;
@@ -830,12 +1054,22 @@ ul {
           font-weight: 500;
           color: #333;
           line-height: 50px;
+          @include tablet {
+            font-size: 20px;
+            line-height: 30px;
+            .mobile {
+              display: none;
+            }
+          }
         }
         .btn {
           width: 100%;
           @include flexCenter();
           gap: 100px;
           padding: 50px 0;
+          @include tablet {
+            padding: 20px 0;
+          }
           button {
             font-size: 18px;
             font-family: $font-NanumSquare;
@@ -845,6 +1079,10 @@ ul {
             padding: 10px 20px;
             border-radius: 10px;
             cursor: pointer;
+            @include tablet {
+              font-size: 16px;
+              padding: 6px 15px;
+            }
           }
           button.active {
             background-color: #333;
@@ -855,11 +1093,17 @@ ul {
           width: 100%;
           padding: 50px 150px;
           background-color: #f9fafb;
+          @include tablet {
+            padding: 50px 20px;
+          }
           strong {
             width: 100%;
             font-size: 32px;
             font-family: $font-NanumSquare;
             font-weight: 800;
+            @include tablet {
+              font-size: 27px;
+            }
           }
           ul {
             width: 100%;
@@ -876,11 +1120,17 @@ ul {
                 text-align: start;
                 margin: 0;
                 padding: 0;
+                @include tablet {
+                  font-size: 20px;
+                }
               }
               span {
                 font-size: 18px;
                 font-family: $font-NanumSquare;
                 font-weight: 600;
+                @include tablet {
+                  font-size: 16px;
+                }
               }
             }
           }
@@ -894,12 +1144,22 @@ ul {
         @include flexCenter();
         flex-direction: column;
         padding: 50px;
+        @include tablet {
+          padding: 10px;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
       }
     }
     .hero-five {
       display: flex;
       margin-top: 150px;
       justify-content: space-between;
+      @include tablet {
+        flex-direction: column;
+      }
 
       .hero-as {
         width: 700px;
@@ -911,6 +1171,10 @@ ul {
         gap: 80px;
         padding: 50px 30px;
         pointer-events: none;
+        @include tablet {
+          width: 100%;
+          margin-top: 50px;
+        }
         .as-inner {
           width: 100%;
           display: flex;
@@ -924,6 +1188,9 @@ ul {
               width: 100%;
               object-fit: cover;
             }
+            @include tablet {
+              width: 80px;
+            }
           }
           .as-content {
             strong {
@@ -933,6 +1200,9 @@ ul {
               font-weight: 900;
               color: #19984b;
               margin-bottom: 20px;
+              @include tablet {
+                font-size: 20px;
+              }
             }
             ul {
               width: 100%;
@@ -960,6 +1230,9 @@ ul {
   height: 750px;
   position: relative;
   overflow: hidden;
+  @include tablet {
+    height: 500px;
+  }
   .bg {
     width: 100%;
     height: 100%;
@@ -981,6 +1254,13 @@ ul {
       position: absolute;
       top: 0;
       left: 0;
+      @include tablet {
+        background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.8049194677871149) 100%
+        );
+      }
     }
   }
 
@@ -991,6 +1271,9 @@ ul {
     left: 65%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    @include tablet {
+      left: 50%;
+    }
     strong {
       font-size: 42px;
       font-family: $font-NanumSquare;
@@ -998,6 +1281,11 @@ ul {
       color: white;
       display: block;
       line-height: 55px;
+      @include tablet {
+        font-size: 32px;
+        line-height: 46px;
+        text-align: center;
+      }
     }
     span {
       display: block;
@@ -1007,6 +1295,11 @@ ul {
       font-weight: 400;
       margin-top: 20px;
       line-height: 38px;
+      @include tablet {
+        font-size: 22px;
+        line-height: 34px;
+        text-align: center;
+      }
     }
   }
   .arrow {
@@ -1026,11 +1319,18 @@ ul {
   width: 100%;
   padding: 0 40px 249px;
   pointer-events: none;
+  @include tablet {
+    padding: 0 0 149px;
+  }
 
   .app-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+    @include tablet {
+      max-width: auto;
+      width: 90%;
+    }
     .app-first {
       width: 100%;
       padding: 100px 0 240px;
@@ -1062,11 +1362,20 @@ ul {
         display: flex;
         justify-content: space-between;
         position: relative;
+        @include tablet {
+          height: auto;
+          margin-top: 50px;
+        }
+
         div {
           width: 390px;
           height: 670px;
           position: absolute;
           border-radius: 10px;
+          @include tablet {
+            position: relative;
+            height: auto;
+          }
         }
         .one {
           bottom: 0;
@@ -1082,6 +1391,9 @@ ul {
             width: 100%;
             object-fit: cover;
           }
+          @include tablet {
+            top: 0;
+          }
         }
         .first-content {
           position: absolute;
@@ -1089,11 +1401,18 @@ ul {
           bottom: 0;
           background: none;
           height: auto;
+          @include tablet {
+            right: auto;
+            left: 50%;
+            bottom: -150px;
+            transform: translateX(-50%);
+          }
           p {
             font-size: 20px;
             font-family: $font-NanumSquare;
             font-weight: 800;
             line-height: 35px;
+            text-align: center;
           }
         }
       }
@@ -1107,6 +1426,10 @@ ul {
       .second-title {
         max-width: 1140px;
         margin: 0 auto;
+        @include tablet {
+          max-width: auto;
+          width: 90%;
+        }
         h4 {
           font-size: 30px;
           font-family: $font-Pretendard;
@@ -1131,6 +1454,11 @@ ul {
         margin: 0 auto;
         overflow: hidden;
         margin-top: 100px;
+        @include tablet {
+          max-width: auto;
+          width: 90%;
+          margin-top: 50px;
+        }
         ul {
           width: 100%;
           display: flex;
@@ -1150,12 +1478,16 @@ ul {
                 width: 100%;
                 object-fit: cover;
               }
+              @include tablet {
+                width: 80px;
+                height: 100px;
+              }
             }
             .content {
               pointer-events: none;
               p {
                 font-size: 22px;
-                font-family: $font-Pretendard;
+                font-family: $font-NanumSquare;
                 font-weight: 800;
                 color: #19984b;
                 margin-top: 50px;
@@ -1168,15 +1500,26 @@ ul {
                   margin-right: 3px;
                   font-size: 22px;
                   display: inline-block;
+                  @include tablet {
+                    font-size: 17px;
+                  }
+                }
+                @include tablet {
+                  margin-top: 20px;
+                  font-size: 18px;
                 }
               }
               span {
                 display: block;
                 font-size: 18px;
-                font-family: $font-Pretendard;
+                font-family: $font-NanumSquare;
                 font-weight: 800;
                 margin-top: 30px;
                 text-align: center;
+                @include tablet {
+                  font-size: 16px;
+                  margin-top: 10px;
+                }
               }
             }
           }
@@ -1188,6 +1531,11 @@ ul {
       width: 100%;
       padding: 100px 0;
       margin-top: 704px;
+      position: relative;
+
+      @include tablet {
+        margin-top: 604px;
+      }
       .third-title {
         h4 {
           font-size: 30px;
@@ -1209,12 +1557,26 @@ ul {
             color: #19984b;
           }
         }
+        .m-txt {
+          display: none;
+          @include tablet {
+            display: block;
+            font-size: 18px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            line-height: 25px;
+          }
+        }
       }
       .third-content {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin-top: 100px;
+        @include tablet {
+          justify-content: center;
+          align-items: center;
+        }
         .txt {
           font-size: 20px;
           font-family: $font-NanumSquare;
@@ -1223,7 +1585,11 @@ ul {
           p {
             margin-top: 150px;
           }
+          @include tablet {
+            display: none;
+          }
         }
+
         .phone-img {
           width: 390px;
           height: 670px;
@@ -1233,7 +1599,6 @@ ul {
           }
         }
       }
-      position: relative;
       .third-list {
         width: 100%;
         position: absolute;
@@ -1252,15 +1617,29 @@ ul {
             border-radius: 8px;
             padding: 30px;
             box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
+            @include tablet {
+              width: 150px;
+              height: 150px;
+              padding: 10px;
+            }
             img {
               width: 70px;
               object-fit: cover;
+              @include tablet {
+                width: 40px;
+              }
             }
             span {
               font-size: 18px;
               font-family: $font-NanumSquare;
               font-weight: 700;
               margin-top: 15px;
+              @include tablet {
+                font-size: 16px;
+                margin-top: 10px;
+                font-weight: 800;
+                text-wrap: nowrap;
+              }
             }
           }
         }
@@ -1279,10 +1658,17 @@ ul {
   width: 100%;
   padding: 0 40px 249px;
   pointer-events: none;
+  @include tablet {
+    padding: 0 0 149px;
+  }
   .esg-inner {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+    @include tablet {
+      width: 90%;
+      max-width: auto;
+    }
     .hero-title {
       padding-top: 150px;
       h4 {
@@ -1317,6 +1703,13 @@ ul {
           align-items: center;
           background-color: #19984b;
           border-radius: 15px;
+          @include tablet {
+            width: 45%;
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+            overflow: hidden;
+          }
           span {
             font-size: 25px;
             font-family: $font-NanumSquare;
@@ -1325,10 +1718,17 @@ ul {
             color: #fff;
             line-height: 43px;
             pointer-events: none;
+            @include tablet {
+              font-size: 18px;
+              line-height: 28px;
+            }
           }
           img {
             width: 40%;
             object-fit: cover;
+            @include tablet {
+              width: 40%;
+            }
           }
         }
         .content-big {
@@ -1336,6 +1736,12 @@ ul {
           height: 487px;
           border-radius: 15px;
           overflow: hidden;
+          @include tablet {
+            width: 45%;
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -1362,6 +1768,9 @@ ul {
         border-radius: 15px;
         margin-top: 50px;
         overflow: hidden;
+        @include tablet {
+          height: auto;
+        }
         .esg-nav {
           width: 100%;
           background-color: #19984b;
@@ -1372,6 +1781,9 @@ ul {
             color: #fff;
             text-align: center;
             padding: 10px 0;
+            @include tablet {
+              font-size: 20px;
+            }
           }
         }
         ul {
@@ -1380,6 +1792,9 @@ ul {
           justify-content: space-around;
           align-items: center;
           padding: 50px 0;
+          @include tablet {
+            padding: 20px 0;
+          }
           li {
             width: 33.3%;
             height: 300px;
@@ -1398,25 +1813,45 @@ ul {
               height: 100px;
               @include flexCenter();
 
+              @include tablet {
+                width: auto;
+                height: 70px;
+              }
+
               img {
                 height: 100%;
                 object-fit: cover;
               }
             }
             span {
+              display: block;
               font-size: 22px;
-              font-family: $font-Pretendard;
+              font-family: $font-NanumSquare;
               font-weight: 800;
+              @include tablet {
+                font-size: 18px;
+                text-align: center;
+                height: 60px;
+                .mobile {
+                  display: none;
+                }
+              }
             }
             .arrow {
               width: 30px;
               object-fit: cover;
+              @include tablet {
+                width: 25px;
+              }
             }
             p {
               font-size: 25px;
-              font-family: $font-Pretendard;
+              font-family: $font-NanumSquare;
               font-weight: 800;
               color: #19984b;
+              @include tablet {
+                font-size: 20px;
+              }
             }
           }
         }
@@ -1434,19 +1869,33 @@ ul {
       .ai-robot {
         width: 100%;
         margin-top: 50px;
+        @include tablet {
+          margin-top: 150px;
+        }
         ul {
           width: 100%;
           display: flex;
           flex-direction: column;
           gap: 70px;
+          @include tablet {
+            gap: 100px;
+          }
           li {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include tablet {
+              flex-direction: column;
+              justify-content: flex-start;
+              gap: 50px;
+            }
             .left {
               position: relative;
               width: 400px;
+              @include tablet {
+                width: 500px;
+              }
 
               img {
                 width: 100%;
@@ -1470,36 +1919,65 @@ ul {
                 font-family: $font-Pretendard;
                 font-weight: 800;
                 border: 7px solid white;
+                @include tablet {
+                  font-size: 20px;
+                  right: -100px;
+                }
               }
             }
             .arrow {
               width: 50px;
               transform: rotate(-90deg);
+              @include tablet {
+                transform: rotate(0deg);
+              }
             }
             .right {
               display: flex;
               align-items: center;
               gap: 20px;
+              @include tablet {
+                width: 500px;
+                gap: 50px;
+                padding: 50px;
+                background-color: #f9fafb;
+                border-radius: 10px;
+              }
               img {
                 width: 30px;
                 object-fit: cover;
+                @include tablet {
+                  width: 40px;
+                }
               }
               .content {
                 width: 100%;
+
                 h6 {
                   font-size: 20px;
                   font-family: $font-NanumSquare;
                   font-weight: 800;
                   color: #19984b;
                   padding: 5px 0;
+                  @include tablet {
+                    margin: 0;
+                  }
+
                   span {
                     font-size: 26px;
+                    @include tablet {
+                      font-size: 23px;
+                    }
                   }
                 }
                 p {
                   font-size: 16px;
                   font-family: $font-NanumSquare;
                   font-weight: 800;
+                  @include tablet {
+                    margin: 0;
+                    padding-bottom: 5px;
+                  }
                   span {
                     font-weight: 600;
                   }
@@ -1508,13 +1986,23 @@ ul {
             }
           }
           .mid {
+            @include tablet {
+              flex-direction: column-reverse;
+            }
             .arrow {
               transform: rotate(90deg);
+              @include tablet {
+                transform: rotate(0deg);
+              }
             }
             .left {
               span {
                 right: auto;
                 left: 0px;
+                @include tablet {
+                  left: auto;
+                  right: -100px;
+                }
               }
             }
           }
@@ -1527,17 +2015,25 @@ ul {
       .content {
         width: 100%;
         margin-top: 100px;
+        @include tablet {
+          margin-top: 50px;
+        }
         ul {
           width: 100%;
           display: flex;
           flex-direction: column;
           gap: 50px;
+
           li {
             display: flex;
             align-items: center;
             gap: 30px;
             width: 100%;
             height: 250px;
+            @include tablet {
+              flex-direction: column;
+              align-items: baseline;
+            }
             .text {
               font-size: 25px;
               writing-mode: vertical-lr;
@@ -1549,6 +2045,13 @@ ul {
               background-color: #f9fafb;
               box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
               border-radius: 10px;
+              @include tablet {
+                font-size: 22px;
+                writing-mode: horizontal-tb;
+                width: auto;
+                height: auto;
+                padding: 6px 20px;
+              }
             }
             .inner {
               width: 100%;
@@ -1570,11 +2073,17 @@ ul {
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, 0.3);
+                @include tablet {
+                  background-color: rgba(0, 0, 0, 0.4);
+                }
               }
               img {
                 width: 100px;
                 object-fit: cover;
                 z-index: 10;
+                @include tablet {
+                  width: 60px;
+                }
               }
               p {
                 font-size: 30px;
@@ -1582,6 +2091,11 @@ ul {
                 font-weight: 800;
                 color: #fff;
                 z-index: 10;
+                margin: 0;
+                @include tablet {
+                  font-size: 22px;
+                  text-shadow: 0 0 2px white;
+                }
               }
             }
             &:nth-child(2) {
@@ -1610,9 +2124,15 @@ ul {
         display: flex;
         gap: 30px;
         margin-top: 100px;
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+        }
         .img {
           height: 480px;
-
+          @include tablet {
+            height: 380px;
+          }
           img {
             height: 100%;
             object-fit: cover;
@@ -1621,7 +2141,9 @@ ul {
         .inner {
           width: 100%;
           height: 480px;
-
+          @include tablet {
+            height: auto;
+          }
           ul {
             width: 100%;
             height: 100%;
@@ -1630,6 +2152,9 @@ ul {
             flex-direction: column;
             justify-content: space-between;
             gap: 30px;
+            @include tablet {
+              gap: 40px;
+            }
             li {
               display: flex;
               align-items: center;
@@ -1645,6 +2170,15 @@ ul {
                   object-fit: cover;
                   transform: rotate(-90deg);
                 }
+                @include tablet {
+                  width: 50px;
+                  height: 50px;
+                  img {
+                    width: 20px;
+                    height: 30px;
+                    object-fit: cover;
+                  }
+                }
               }
               .main-text {
                 width: 100%;
@@ -1654,6 +2188,9 @@ ul {
                 box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
                 border-radius: 15px;
                 overflow: hidden;
+                @include tablet {
+                  border-radius: 10px;
+                }
 
                 .main-text-img {
                   width: 150px;
@@ -1665,6 +2202,11 @@ ul {
                     height: 100%;
                     object-fit: cover;
                   }
+                  @include tablet {
+                    width: 130px;
+                    height: 120px;
+                    border-radius: 10px;
+                  }
                 }
                 .main-text-content {
                   padding: 10px 15px;
@@ -1675,12 +2217,18 @@ ul {
                     font-weight: 800;
                     color: #19984b;
                     margin-bottom: 10px;
+                    @include tablet {
+                      font-size: 22px;
+                    }
                   }
                   span {
                     font-size: 18px;
                     font-family: $font-NanumSquare;
                     font-weight: 800;
                     color: #333;
+                    @include tablet {
+                      display: block;
+                    }
                   }
                 }
               }
@@ -1712,24 +2260,36 @@ ul {
           box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
           background-color: #f9fafb;
           border-radius: 15px;
+          @include tablet {
+            border-radius: 10px;
+          }
           p {
             font-size: 22px;
             font-family: $font-NanumSquare;
             font-weight: 700;
             padding: 10px 0;
+            margin: 0;
+            @include tablet {
+              font-size: 20px;
+            }
           }
           span {
             display: block;
             font-size: 28px;
             font-family: $font-NanumSquare;
             font-weight: 900;
-
             color: #19984b;
             padding-bottom: 20px;
+            @include tablet {
+              font-size: 25px;
+            }
           }
         }
         .arrow {
           width: 40px;
+          @include tablet {
+            width: 30px;
+          }
         }
         .donation-list {
           width: 100%;
@@ -1738,6 +2298,9 @@ ul {
             display: flex;
             justify-content: space-between;
             list-style: none;
+            @include tablet {
+              flex-flow: wrap;
+            }
             li {
               width: 230px;
               height: 500px;
@@ -1745,11 +2308,22 @@ ul {
               overflow: hidden;
               box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.3);
               background-color: #f9fafb;
+
+              @include tablet {
+                width: 45%;
+                height: auto;
+                aspect-ratio: 1/1;
+                margin-bottom: 50px;
+                overflow: hidden;
+              }
               .donation-img {
                 width: 100%;
                 height: 85%;
                 overflow: hidden;
                 @include flexCenter();
+                @include tablet {
+                  height: 80%;
+                }
                 img {
                   height: 100%;
                   object-fit: cover;
@@ -1762,6 +2336,10 @@ ul {
                 color: #333;
                 @include flexCenter();
                 height: 15%;
+                @include tablet {
+                  height: 20%;
+                  font-size: 20px;
+                }
               }
             }
           }
@@ -2075,6 +2653,7 @@ ul {
       margin: 0 auto;
       display: flex;
       align-items: center;
+
       .banner-content {
         pointer-events: none;
         strong {
@@ -2368,6 +2947,11 @@ ul {
   &:hover {
     background-color: #19984b;
     border: none;
+  }
+  @include tablet {
+    font-size: 20px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 .send-form {

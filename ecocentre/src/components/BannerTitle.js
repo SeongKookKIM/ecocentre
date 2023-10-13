@@ -25,9 +25,9 @@ function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
       <h2>{title}</h2>
       <p>
         {ftext}
-        <br />
+        <br className="mobile" />
         {stext}
-        <br />
+        <br className="mobile" />
         {ttext}
       </p>
       {btnhide && (

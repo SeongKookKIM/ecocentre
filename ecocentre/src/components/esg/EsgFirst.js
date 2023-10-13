@@ -55,7 +55,7 @@ function EsgFirst() {
             </div>
             <span>
               1T Co2 상쇄
-              <br />
+              <br className="mobile" />
               식재 그루 수
             </span>
             <img

@@ -9,9 +9,13 @@ function AppThird() {
           플라스틱히어로 어플을 <br />
           바로 <span>실행</span>해보세요
         </p>
+        <span className="m-txt">
+          환경포인트로 기프티콘 구매와 환경포인트 기부, <br />
+          과학, 기후, 기부 관련 교육 프로그램까지
+        </span>
       </div>
       <div className="third-content">
-        <div className="txt">
+        <div className="txt left">
           <p>
             환경포인트로
             <br />
@@ -23,7 +27,7 @@ function AppThird() {
         <div className="phone-img">
           <img src="/assets/image/6/02.png" alt="02" />
         </div>
-        <div className="txt">
+        <div className="txt right">
           <p>
             과학, 기후, 기부 관련
             <br />
