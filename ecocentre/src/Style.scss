@@ -201,6 +201,9 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
+    @include mobile {
+      padding: 10px 0;
+    }
     .m-nav-inner {
       width: 95%;
       margin: 0 auto;
@@ -215,22 +218,37 @@ ul {
           object-fit: cover;
           cursor: pointer;
         }
+        @include mobile {
+          width: 80px;
+        }
       }
       .dropdown {
         position: absolute;
         left: 150px;
+        @include mobile {
+          left: 80px;
+        }
         button {
           display: flex;
           align-items: center;
           img {
             width: 25px;
             object-fit: cover;
+            @include mobile {
+              width: 20px;
+            }
           }
           &::after {
             border-top: 0.5em solid;
             border-right: 0.5em solid transparent;
             border-bottom: 0;
             border-left: 0.5em solid transparent;
+            @include mobile {
+              border-top: 0.4em solid;
+              border-right: 0.4em solid transparent;
+              border-bottom: 0;
+              border-left: 0.4em solid transparent;
+            }
           }
         }
       }
@@ -247,6 +265,9 @@ ul {
           stroke-width: 3px;
           stroke-linecap: round;
           stroke-linejoin: round;
+          @include mobile {
+            transform: scale(0.8);
+          }
         }
       }
     }
@@ -284,9 +305,15 @@ ul {
     img {
       width: 130px;
       object-fit: cover;
+      @include mobile {
+        width: 100px;
+      }
     }
     button {
       transform: scale(1.4);
+      @include mobile {
+        transform: scale(1.1);
+      }
     }
   }
   .offcanvas-body {
@@ -306,6 +333,9 @@ ul {
         cursor: pointer;
         &:hover {
           color: #333;
+        }
+        @include mobile {
+          font-size: 22px;
         }
       }
     }
@@ -355,12 +385,18 @@ ul {
         font-size: 42px;
         line-height: 58px;
       }
+      @include mobile {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+      }
     }
     .app-btn {
       display: flex;
       gap: 30px;
       @include tablet {
         gap: 20px;
+        justify-content: center;
       }
       button {
         font-size: 23px;
@@ -379,10 +415,17 @@ ul {
           font-size: 21px;
           padding: 6px 10px;
         }
+        @include mobile {
+          font-size: 16px;
+          padding: 4px 10px;
+        }
         img {
           width: 40px;
           @include tablet {
             width: 30px;
+          }
+          @include mobile {
+            width: 25px;
           }
         }
       }
@@ -399,6 +442,9 @@ ul {
   @include tablet {
     padding: 100px 0px 100px;
   }
+  @include mobile {
+    padding: 80px 0 80px;
+  }
   h2 {
     font-size: 20px;
     line-height: 60px;
@@ -406,6 +452,10 @@ ul {
     font-weight: 800;
     color: #19984b;
     pointer-events: none;
+    @include mobile {
+      font-size: 19px;
+      line-height: 40px;
+    }
   }
   p {
     width: 100%;
@@ -425,6 +475,11 @@ ul {
       .mobile {
         display: none;
       }
+    }
+    @include mobile {
+      font-size: 19px;
+      line-height: 38px;
+      margin: 13px auto 37px;
     }
   }
   .accordion {
@@ -449,6 +504,11 @@ ul {
           @include tablet {
             font-size: 18px;
             padding: 14px 16px;
+            border: 1px solid #333;
+          }
+          @include mobile {
+            font-size: 16px;
+            padding: 9px 12px;
           }
         }
       }
@@ -465,6 +525,10 @@ ul {
             margin-top: 150px;
             @include tablet {
               padding: 100px 0 80px;
+            }
+            @include mobile {
+              margin-top: 100px;
+              padding: 80px 0 60px;
             }
 
             .we-inner {
@@ -490,6 +554,10 @@ ul {
                     font-size: 32px;
                     line-height: 46px;
                   }
+                  @include mobile {
+                    font-size: 25px;
+                    line-height: 39px;
+                  }
                 }
                 span.date {
                   font-size: 16px;
@@ -498,6 +566,9 @@ ul {
                   pointer-events: none;
                   @include tablet {
                     font-size: 15px;
+                  }
+                  @include mobile {
+                    font-size: 14px;
                   }
                 }
               }
@@ -519,6 +590,9 @@ ul {
                     @include tablet {
                       padding: 40px 0;
                     }
+                    @include mobile {
+                      padding: 20px 0;
+                    }
 
                     img {
                       width: 100px;
@@ -526,15 +600,24 @@ ul {
                       @include tablet {
                         width: 70px;
                       }
+                      @include mobile {
+                        width: 50px;
+                      }
                     }
                     .inner {
                       margin-left: 50px;
+                      @include mobile {
+                        margin-left: 30px;
+                      }
                       span {
                         display: block;
                         font-size: 16px;
                         font-family: $font-NanumSquare;
                         color: #666666;
                         margin-bottom: 10px;
+                        @include mobile {
+                          margin-bottom: 0px;
+                        }
                       }
                       p {
                         margin: 0;
@@ -542,8 +625,14 @@ ul {
                         font-size: 42px;
                         font-family: $font-NanumSquare;
                         font-weight: 800;
+                        margin: 0;
                         @include tablet {
+                          width: 100%;
                           font-size: 37px;
+                        }
+                        @include mobile {
+                          width: 100%;
+                          font-size: 26px;
                         }
                       }
                     }
@@ -566,6 +655,9 @@ ul {
             width: 90%;
             flex-direction: column;
           }
+          @include mobile {
+            padding-top: 50px;
+          }
           .title {
             p {
               font-size: 42px;
@@ -574,13 +666,16 @@ ul {
               font-weight: 800;
               line-height: 56px;
               margin: 0;
-
               span {
                 color: #19984b;
               }
               @include tablet {
                 font-size: 32px;
                 line-height: 46px;
+              }
+              @include mobile {
+                font-size: 25px;
+                line-height: 39px;
               }
             }
           }
@@ -597,6 +692,9 @@ ul {
                 font-family: $font-NanumSquare;
                 font-weight: 600;
                 padding: 5px 0;
+                @include mobile {
+                  font-size: 16px;
+                }
                 &:nth-child(1) {
                   font-size: 35px;
                   font-weight: 800;
@@ -604,6 +702,10 @@ ul {
                   padding-bottom: 20px;
                   @include tablet {
                     font-size: 30px;
+                  }
+                  @include mobile {
+                    font-size: 25px;
+                    padding-bottom: 10px;
                   }
                 }
               }
@@ -628,6 +730,9 @@ ul {
   @include tablet {
     padding: 100px 0px 149px;
   }
+  @include mobile() {
+    padding: 50px 0 109px;
+  }
 
   .story-inner {
     width: 100%;
@@ -647,6 +752,9 @@ ul {
         img {
           width: 20px;
           object-fit: cover;
+          @include mobile {
+            width: 17px;
+          }
         }
       }
       h2 {
@@ -663,6 +771,10 @@ ul {
           font-size: 32px;
           line-height: 46px;
         }
+        @include mobile {
+          font-size: 25px;
+          line-height: 35px;
+        }
       }
       p {
         font-size: 22px;
@@ -674,6 +786,11 @@ ul {
         @include tablet {
           font-size: 21px;
           line-height: 31px;
+        }
+        @include mobile {
+          font-size: 16px;
+          line-height: 23px;
+          margin-top: 10px;
         }
       }
       .story-list {
@@ -700,6 +817,10 @@ ul {
             border-radius: 7px;
             background-color: white;
           }
+          @include mobile {
+            font-size: 16px;
+            padding: 4px 10px;
+          }
         }
         span.active {
           color: #333;
@@ -721,6 +842,9 @@ ul {
             background-color: #333;
             color: #fff;
           }
+          @include mobile {
+            font-weight: 500;
+          }
         }
       }
     }
@@ -733,6 +857,12 @@ ul {
         margin: 100px auto 0;
         width: 600px;
         height: 500px;
+      }
+      @include mobile {
+        margin: 50px auto 0;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
       }
       ul {
         width: 550px;
@@ -756,6 +886,9 @@ ul {
               @include tablet {
                 height: 400px;
               }
+              @include mobile {
+                height: 60%;
+              }
             }
           }
           .story-content {
@@ -768,15 +901,22 @@ ul {
             padding: 0 20px;
             position: relative;
             pointer-events: none;
+
             strong {
               font-size: 25px;
               font-weight: $font-NanumSquare;
               font-weight: 800;
+              @include mobile {
+                font-size: 18px;
+              }
             }
             span {
               font-size: 17px;
               font-weight: $font-NanumSquare;
               font-weight: 600;
+              @include mobile {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -791,6 +931,9 @@ ul {
   padding: 0 40px 249px;
   @include tablet {
     padding: 0 0 149px;
+  }
+  @include mobile {
+    padding: 0 0 109px;
   }
   .recycle-inner {
     width: 100%;
@@ -813,6 +956,9 @@ ul {
         flex-direction: column;
         align-items: flex-start;
       }
+      @include mobile {
+        margin-top: 80px;
+      }
       .left-content,
       .right-content {
         @include tablet {
@@ -826,11 +972,17 @@ ul {
           img {
             width: 20px;
             object-fit: cover;
+            @include mobile {
+              width: 17px;
+            }
           }
           font-size: 18px;
           font-family: $font-NanumSquare;
           font-weight: 800;
           color: #19984b;
+          @include mobile {
+            font-size: 16px;
+          }
         }
         h2 {
           font-size: 38px;
@@ -845,6 +997,13 @@ ul {
             font-size: 32px;
             line-height: 46px;
           }
+          @include mobile {
+            font-size: 25px;
+            line-height: 35px;
+            .mobile {
+              display: none;
+            }
+          }
         }
         p {
           font-size: 20px;
@@ -856,6 +1015,13 @@ ul {
           @include tablet {
             font-size: 18px;
             line-height: 26px;
+          }
+          @include mobile {
+            font-size: 16px;
+            line-height: 23px;
+            .mobile {
+              display: none;
+            }
           }
         }
       }
@@ -871,6 +1037,12 @@ ul {
           width: 600px;
           height: 500px;
           margin: 50px auto 0;
+        }
+        @include mobile {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1/1;
+          margin: 30px auto 0;
         }
 
         img {
@@ -891,6 +1063,9 @@ ul {
       @include tablet {
         margin-top: 50px;
       }
+      @include mobile {
+        margin-top: 30px;
+      }
       ul {
         width: 100%;
         display: flex;
@@ -902,6 +1077,9 @@ ul {
           gap: 50px;
           flex-wrap: wrap;
         }
+        @include mobile {
+          gap: 20px;
+        }
         li {
           width: 150px;
           height: 150px;
@@ -909,6 +1087,10 @@ ul {
           @include tablet {
             width: 100px;
             height: 100px;
+          }
+          @include mobile {
+            width: 60px;
+            height: 60px;
           }
           img {
             width: 100%;
@@ -949,6 +1131,9 @@ ul {
     @include tablet {
       max-width: auto;
       width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
     }
     .content {
       h2 {
@@ -962,6 +1147,10 @@ ul {
           font-size: 42px;
           line-height: 58px;
         }
+        @include mobile {
+          font-size: 32px;
+          line-height: 48px;
+        }
       }
       p {
         font-size: 22px;
@@ -971,6 +1160,11 @@ ul {
         font-weight: 600;
         margin-top: 20px;
         pointer-events: none;
+        @include mobile {
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+        }
       }
     }
     .img {
@@ -982,14 +1176,23 @@ ul {
       @include tablet {
         width: 300px;
       }
+      @include mobile {
+        width: 100px;
+      }
     }
   }
   .arrow {
     position: absolute;
     bottom: 50px;
+    @include mobile {
+      bottom: 30px;
+    }
     img {
       width: 30px;
       object-fit: cover;
+      @include mobile {
+        width: 20px;
+      }
     }
   }
 }
@@ -1001,6 +1204,9 @@ ul {
   @include tablet {
     padding: 0 0 149px;
   }
+  @include mobile {
+    padding: 0 0 109px;
+  }
   .hero-inner {
     width: 100%;
     max-width: 1140px;
@@ -1011,11 +1217,18 @@ ul {
     }
     .hero-title {
       padding-top: 150px;
+      pointer-events: none;
+      @include mobile {
+        padding-top: 80px;
+      }
       h4 {
         font-size: 30px;
         font-family: $font-Pretendard;
         font-weight: 700;
         color: #19984b;
+        @include mobile {
+          font-size: 25px;
+        }
       }
       p {
         font-size: 30px;
@@ -1026,6 +1239,10 @@ ul {
         span {
           color: #19984b;
         }
+        @include mobile {
+          font-size: 25px;
+          line-height: 35px;
+        }
       }
     }
     .content {
@@ -1034,6 +1251,12 @@ ul {
         justify-content: space-between;
         align-items: center;
         margin-top: 50px;
+        @include mobile {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        }
+
         .content-small {
           width: 400px;
           height: 487px;
@@ -1049,6 +1272,12 @@ ul {
             height: auto;
             aspect-ratio: 1/1;
           }
+          @include mobile {
+            width: 70%;
+            max-width: 300px;
+            justify-content: center;
+            gap: 20px;
+          }
           span {
             font-size: 25px;
             font-family: $font-NanumSquare;
@@ -1062,12 +1291,20 @@ ul {
               line-height: 37px;
               padding: 0 10px;
             }
+            @include mobile {
+              .mobile {
+                display: none;
+              }
+            }
           }
           img {
             width: 40%;
             object-fit: cover;
             @include tablet {
               width: 30%;
+            }
+            @include mobile {
+              width: 25%;
             }
           }
         }
@@ -1085,6 +1322,10 @@ ul {
             width: 45%;
             height: auto;
             aspect-ratio: 1/1;
+          }
+          @include mobile {
+            width: 70%;
+            max-width: 300px;
           }
         }
 
@@ -1117,6 +1358,9 @@ ul {
           @include tablet {
             font-size: 32px;
           }
+          @include mobile {
+            font-size: 25px;
+          }
         }
         p {
           width: 100%;
@@ -1133,6 +1377,10 @@ ul {
               display: none;
             }
           }
+          @include mobile {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
         .btn {
           width: 100%;
@@ -1141,6 +1389,9 @@ ul {
           padding: 50px 0;
           @include tablet {
             padding: 20px 0;
+          }
+          @include mobile {
+            gap: 50px;
           }
           button {
             font-size: 18px;
@@ -1155,6 +1406,10 @@ ul {
               font-size: 16px;
               padding: 6px 15px;
             }
+            @include mobile {
+              border: 1px solid #333;
+              font-size: 16px;
+            }
           }
           button.active {
             background-color: #333;
@@ -1168,6 +1423,9 @@ ul {
           @include tablet {
             padding: 50px 20px;
           }
+          @include mobile {
+            margin-top: 30px;
+          }
           strong {
             width: 100%;
             font-size: 32px;
@@ -1176,15 +1434,24 @@ ul {
             @include tablet {
               font-size: 27px;
             }
+            @include mobile {
+              font-size: 25px;
+            }
           }
           ul {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             margin-top: 30px;
+            @include mobile {
+              justify-content: space-between;
+            }
             li {
               width: 50%;
               margin-bottom: 40px;
+              @include mobile {
+                width: 48%;
+              }
               p {
                 font-size: 22px;
                 font-family: $font-NanumSquare;
@@ -1195,6 +1462,9 @@ ul {
                 @include tablet {
                   font-size: 20px;
                 }
+                @include mobile {
+                  font-size: 18px;
+                }
               }
               span {
                 font-size: 18px;
@@ -1202,6 +1472,9 @@ ul {
                 font-weight: 600;
                 @include tablet {
                   font-size: 16px;
+                }
+                @include mobile {
+                  font-size: 13px;
                 }
               }
             }
@@ -1232,6 +1505,9 @@ ul {
       @include tablet {
         flex-direction: column;
       }
+      @include mobile {
+        margin-top: 80px;
+      }
 
       .hero-as {
         width: 700px;
@@ -1247,6 +1523,9 @@ ul {
           width: 100%;
           margin-top: 50px;
         }
+        @include mobile {
+          gap: 30px;
+        }
         .as-inner {
           width: 100%;
           display: flex;
@@ -1256,12 +1535,18 @@ ul {
           .as-image {
             width: 120px;
             margin-right: 50px;
+            @include tablet {
+              width: 80px;
+            }
+            @include mobile {
+              width: 70px;
+              min-width: 70px;
+              margin-right: 30px;
+            }
+
             img {
               width: 100%;
               object-fit: cover;
-            }
-            @include tablet {
-              width: 80px;
             }
           }
           .as-content {
@@ -1275,6 +1560,10 @@ ul {
               @include tablet {
                 font-size: 20px;
               }
+              @include mobile {
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
             }
             ul {
               width: 100%;
@@ -1286,6 +1575,9 @@ ul {
                 margin-bottom: 5px;
                 span {
                   font-weight: bold;
+                }
+                @include mobile {
+                  font-size: 15px;
                 }
               }
             }
@@ -1358,6 +1650,10 @@ ul {
         line-height: 46px;
         text-align: center;
       }
+      @include mobile {
+        font-size: 25px;
+        line-height: 35px;
+      }
     }
     span {
       display: block;
@@ -1372,6 +1668,13 @@ ul {
         line-height: 34px;
         text-align: center;
       }
+      @include mobile {
+        font-size: 18px;
+        line-height: 28px;
+        .mobile {
+          display: none;
+        }
+      }
     }
   }
   .arrow {
@@ -1379,9 +1682,15 @@ ul {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    @include mobile {
+      bottom: 30px;
+    }
     img {
       width: 30px;
       object-fit: cover;
+      @include mobile {
+        width: 20px;
+      }
     }
   }
 }
@@ -1393,6 +1702,9 @@ ul {
   pointer-events: none;
   @include tablet {
     padding: 0 0 149px;
+  }
+  @include mobile {
+    padding: 0 0 109px;
   }
 
   .app-inner {
@@ -1406,16 +1718,28 @@ ul {
     .app-first {
       width: 100%;
       padding: 100px 0 240px;
+      @include mobile {
+        padding: 80px 0 240px;
+      }
 
       h4 {
         font-size: 30px;
         font-family: $font-Pretendard;
         font-weight: 700;
         color: #19984b;
+        @include mobile {
+          font-size: 25px;
+          line-height: 35px;
+          margin: 0;
+        }
       }
       img {
         width: 100px;
         margin-top: 15px;
+        @include mobile {
+          width: 80px;
+          margin-top: 5px;
+        }
       }
       p {
         font-size: 30px;
@@ -1425,6 +1749,10 @@ ul {
         margin-top: 15px;
         span {
           color: #19984b;
+        }
+        @include mobile {
+          font-size: 24px;
+          line-height: 35px;
         }
       }
       .first-image {
@@ -1479,12 +1807,17 @@ ul {
             bottom: -150px;
             transform: translateX(-50%);
           }
+
           p {
             font-size: 20px;
             font-family: $font-NanumSquare;
             font-weight: 800;
             line-height: 35px;
             text-align: center;
+            @include mobile {
+              font-size: 16px;
+              line-height: 30px;
+            }
           }
         }
       }
@@ -1495,6 +1828,9 @@ ul {
       width: 100%;
       padding: 100px 0;
       background-color: #f9fafb;
+      @include mobile {
+        padding: 80px 0;
+      }
       .second-title {
         max-width: 1140px;
         margin: 0 auto;
@@ -1507,6 +1843,11 @@ ul {
           font-family: $font-Pretendard;
           font-weight: 700;
           color: #19984b;
+          @include mobile {
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0;
+          }
         }
         p {
           font-size: 30px;
@@ -1516,6 +1857,10 @@ ul {
           margin-top: 15px;
           span {
             color: #19984b;
+          }
+          @include mobile {
+            font-size: 24px;
+            line-height: 35px;
           }
         }
       }
@@ -1537,11 +1882,19 @@ ul {
           justify-content: space-between;
           align-items: center;
           list-style: none;
+          @include mobile {
+            flex-flow: wrap;
+          }
           li {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @include mobile {
+              width: 50%;
+              margin-bottom: 30px;
+            }
+
             .img {
               width: 130px;
               height: 150px;
@@ -1553,6 +1906,10 @@ ul {
               @include tablet {
                 width: 80px;
                 height: 100px;
+              }
+              @include mobile {
+                width: 70px;
+                height: 90px;
               }
             }
             .content {
@@ -1608,16 +1965,28 @@ ul {
       @include tablet {
         margin-top: 604px;
       }
+      @include mobile {
+        margin-top: 754px;
+      }
       .third-title {
         h4 {
           font-size: 30px;
           font-family: $font-Pretendard;
           font-weight: 700;
           color: #19984b;
+          @include mobile {
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0;
+          }
         }
         img {
           width: 100px;
           margin-top: 15px;
+          @include mobile {
+            width: 80px;
+            margin-top: 5px;
+          }
         }
         p {
           font-size: 30px;
@@ -1628,6 +1997,10 @@ ul {
           span {
             color: #19984b;
           }
+          @include mobile {
+            font-size: 24px;
+            line-height: 35px;
+          }
         }
         .m-txt {
           display: none;
@@ -1637,6 +2010,14 @@ ul {
             font-family: $font-NanumSquare;
             font-weight: 800;
             line-height: 25px;
+          }
+          @include mobile {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 23px;
+            .mobile {
+              display: none;
+            }
           }
         }
       }

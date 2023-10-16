@@ -14,7 +14,7 @@ function HeroFirst() {
         <div className="content-small">
           <span>
             IOT 시반 AI기술로
-            <br />
+            <br className="mobile" />
             자원 구분을 정확하게
           </span>
           <img src="/assets/icon/iot.png" alt="iot" />

@@ -10,7 +10,8 @@ function AppThird() {
           바로 <span>실행</span>해보세요
         </p>
         <span className="m-txt">
-          환경포인트로 기프티콘 구매와 환경포인트 기부, <br />
+          환경포인트로 기프티콘 구매와 환경포인트 기부,{" "}
+          <br className="mobile" />
           과학, 기후, 기부 관련 교육 프로그램까지
         </span>
       </div>

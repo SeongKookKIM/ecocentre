@@ -18,7 +18,7 @@ function HeroSecond() {
           <img src="/assets/icon/down.png" alt="down" />
           <span>
             최대 5배 효율적인 수거로
-            <br />
+            <br className="mobile" />
             탄소 배출 절감 효과가 있습니다.
           </span>
         </div>

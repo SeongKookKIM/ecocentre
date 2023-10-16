@@ -14,7 +14,7 @@ function HeroThird() {
         <div className="content-small">
           <span>
             투명과 유색을 구분하여 효율적인
-            <br />
+            <br className="mobile" />
             자원 순환을 지원합니다.
           </span>
           <img src="/assets/icon/return.png" alt="return" />

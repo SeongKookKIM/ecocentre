@@ -17,8 +17,9 @@ function RecycleRight({ img, topTitle, contentImg }) {
           활동에 참여할 수 있습니다.
         </h2>
         <p>
-          플라스틱히어로 AI로봇에 폐 플라스틱을 투입하여 <br />
-          환경 포인트를 적립받을 수 있습니다. <br />
+          플라스틱히어로 AI로봇에 폐 플라스틱을 투입하여{" "}
+          <br className="mobile" />
+          환경 포인트를 적립받을 수 있습니다. <br className="mobile" />
         </p>
       </div>
     </div>

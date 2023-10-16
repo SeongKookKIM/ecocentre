@@ -9,11 +9,11 @@ function ThirdBanner() {
       </div>
       <div className="banner-content">
         <strong>
-          플라스틱 히어로 <br />
+          플라스틱 히어로 <br className="mobile" />
           애플리케이션
         </strong>
         <span>
-          플라스틱히어로 기술의 핵심 <br />
+          플라스틱히어로 기술의 핵심 <br className="mobile" />
           탈중앙화 애플리케이션
         </span>
       </div>
