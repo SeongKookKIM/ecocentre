@@ -3105,12 +3105,18 @@ ul {
 // NewsList
 .newslist {
   background-color: transparent;
+  @include tablet {
+    margin-top: 100px;
+  }
   .newslist-inner {
     .more-btn {
       @include flexCenter();
       margin-top: 100px;
     }
     .news-content {
+      @include tablet {
+        margin-top: 100px;
+      }
       ul {
         li {
           margin-bottom: 50px;
@@ -3148,6 +3154,7 @@ ul {
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   z-index: 99999;
+  overflow-y: scroll;
 
   .modal-dialog {
     width: 100%;
@@ -3156,6 +3163,9 @@ ul {
     max-width: 700px !important;
 
     .modal-content {
+      @include tablet {
+        width: 90%;
+      }
       .modal-header {
         position: relative;
         padding: 40px 0;

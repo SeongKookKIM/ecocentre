@@ -3,19 +3,16 @@ import React, { useEffect, useState } from "react";
 function Nav() {
   const [logo, setLogo] = useState("/assets/image/logo-white.png");
   const [textColor, setTextColor] = useState("");
-  const [user, setUser] = useState("/assets/image/user-white.png");
   const [lang, setLang] = useState("/assets/image/lang-white.png");
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 10) {
         setLogo("/assets/image/logo-color.png");
         setTextColor("active");
-        setUser("/assets/image/user-black.png");
         setLang("/assets/image/lang-black.png");
       } else {
         setLogo("/assets/image/logo-white.png");
         setTextColor("");
-        setUser("/assets/image/user-white.png");
         setLang("/assets/image/lang-white.png");
       }
     });
@@ -95,7 +92,6 @@ function Nav() {
             </span>
           </li>
           <li className="nav-icon">
-            <img src={user} alt="user-white" />
             <img src={lang} alt="lang-white" />
           </li>
         </ul>

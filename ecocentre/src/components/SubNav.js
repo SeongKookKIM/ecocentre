@@ -49,7 +49,6 @@ function SubNav() {
           </li>
         </ul>
         <div className="nav-icon">
-          <img src="/assets/image/user-black.png" alt="user-white" />
           <img src="/assets/image/lang-black.png" alt="lang-white" />
         </div>
       </div>
