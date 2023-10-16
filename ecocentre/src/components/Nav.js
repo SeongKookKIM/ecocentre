@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function Nav() {
   const [logo, setLogo] = useState("/assets/image/logo-white.png");
@@ -92,7 +93,16 @@ function Nav() {
             </span>
           </li>
           <li className="nav-icon">
-            <img src={lang} alt="lang-white" />
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <img src={lang} alt="lang" />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">한국어</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">ENGLISH</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function SubNav() {
   const navigation = useNavigate();
@@ -49,7 +50,16 @@ function SubNav() {
           </li>
         </ul>
         <div className="nav-icon">
-          <img src="/assets/image/lang-black.png" alt="lang-white" />
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+              <img src="/assets/image/lang-black.png" alt="lang" />
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">한국어</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">ENGLISH</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
     </nav>
