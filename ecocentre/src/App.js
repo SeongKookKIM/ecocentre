@@ -20,6 +20,7 @@ import SubNav from "./components/SubNav";
 import NewsList from "./section/news/NewsList";
 import Send from "./components/Send";
 import Mnav from "./components/Mnav";
+import MSubNav from "./components/MSubNav";
 
 function App() {
   function setScreenSize() {
@@ -111,6 +112,7 @@ function App() {
           element={
             <>
               <SubNav />
+              <MSubNav />
               <Ask />
             </>
           }
@@ -120,6 +122,7 @@ function App() {
           element={
             <>
               <SubNav />
+              <MSubNav />
               <NewsList />
             </>
           }
