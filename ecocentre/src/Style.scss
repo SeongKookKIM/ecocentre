@@ -3959,7 +3959,8 @@ ul {
     height: 100%;
     @include flexCenter();
     max-width: 700px !important;
-    margin: 0;
+    margin: 0 auto;
+
     @include mobile() {
       width: 100%;
     }
