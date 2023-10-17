@@ -3677,6 +3677,9 @@ ul {
 .ask {
   width: 100%;
   padding: 100px 0px 109px;
+  @include mobile() {
+    padding: 80px 0 109px;
+  }
   .ask-inner {
     width: 100%;
     max-width: 1140px;
@@ -3692,12 +3695,18 @@ ul {
       font-family: $font-NanumSquare;
       font-weight: 800;
       padding: 100px 0;
+
       span {
         color: #19984b;
       }
       @include tablet {
         font-size: 32px;
         line-height: 46px;
+      }
+      @include mobile() {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 50px 0;
       }
     }
     .search-input {
@@ -3745,6 +3754,9 @@ ul {
     .accordion {
       margin-top: 100px;
       border: none;
+      @include mobile() {
+        margin-top: 50px;
+      }
       .accordion-item {
         border: none;
         border-bottom: 2px solid #d3d3d3;
@@ -3762,6 +3774,10 @@ ul {
               font-size: 19px;
               padding: 22px 20px;
             }
+            @include mobile() {
+              font-size: 16px;
+              padding: 15px 16px;
+            }
           }
         }
         .accordion-collapse {
@@ -3773,6 +3789,9 @@ ul {
             padding: 30px 20px;
             @include tablet {
               font-size: 16px;
+            }
+            @include mobile() {
+              font-size: 15px;
             }
           }
         }
@@ -3822,6 +3841,9 @@ ul {
           @include tablet {
             font-size: 20px;
           }
+          @include mobile() {
+            font-size: 18px;
+          }
         }
         span {
           display: block;
@@ -3830,6 +3852,9 @@ ul {
           font-weight: 700;
           color: #666666;
           margin-top: 5px;
+          @include mobile() {
+            font-size: 20px;
+          }
         }
       }
       .email-adress {
@@ -3842,6 +3867,9 @@ ul {
           font-family: $font-NanumSquare;
           font-weight: 700;
           color: #666666;
+          @include mobile() {
+            font-size: 20px;
+          }
         }
         p {
           font-size: 22px;
@@ -3850,6 +3878,9 @@ ul {
           margin: 0;
           @include tablet {
             font-size: 20px;
+          }
+          @include mobile() {
+            font-size: 18px;
           }
         }
       }
@@ -3912,19 +3943,26 @@ ul {
     right: 20px;
     bottom: 20px;
   }
+  @include mobile() {
+    font-size: 18px;
+    padding: 4px 10px;
+  }
 }
 .send-form {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%;
   overflow: hidden;
   z-index: 99999;
-  overflow-y: scroll;
 
   .modal-dialog {
     width: 100%;
     height: 100%;
     @include flexCenter();
     max-width: 700px !important;
+    margin: 0;
+    @include mobile() {
+      width: 100%;
+    }
 
     .modal-content {
       @include tablet {
@@ -3933,6 +3971,9 @@ ul {
       .modal-header {
         position: relative;
         padding: 40px 0;
+        @include mobile() {
+          padding: 30px 0;
+        }
         .h4 {
           font-size: 25px;
           line-height: 36px;
@@ -3945,19 +3986,32 @@ ul {
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
+          @include mobile() {
+            font-size: 21px;
+            line-height: auto;
+          }
         }
         button {
           position: absolute;
           right: 30px;
+          @include mobile() {
+            right: 20px;
+          }
         }
       }
       .modal-body {
         padding: 50px;
         padding-top: 20px;
+        @include mobile() {
+          padding: 20px 10px;
+        }
         form {
           width: 100%;
           display: flex;
           flex-direction: column;
+          @include mobile() {
+            gap: 20px;
+          }
           div {
             width: 100%;
           }
@@ -3995,6 +4049,11 @@ ul {
             font-family: $font-NanumSquare;
             font-weight: 600;
             width: 100%;
+            @include mobile() {
+              font-size: 18px;
+              line-height: 1;
+              margin-bottom: 10px;
+            }
           }
           input {
             width: 100%;
