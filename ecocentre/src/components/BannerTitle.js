@@ -79,11 +79,20 @@ function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
                   <div className="we-list">
                     <ul className="first">
                       <li>2023</li>
-                      <li>TIME IDEA(US) 키오스크 수출 계약</li>
-                      <li>Ecocentre Japan 키오스크 수출 계약</li>
-                      <li>기업부설연구소 설립</li>
                       <li>
-                        고려대학교-에코센트레 산학연 협력체결 벤처인증
+                        <span className="mobile">-</span> TIME IDEA(US) 키오스크
+                        수출 계약
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> Ecocentre Japan
+                        키오스크 수출 계약
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 기업부설연구소 설립
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 고려대학교-에코센트레
+                        산학연 협력체결 벤처인증
                         <br />
                         ISO 9001 인증
                         <br />
@@ -92,30 +101,74 @@ function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
                         ISO 45001 인증
                         <br />
                       </li>
-                      <li>LJ CHEM 전략적 파트너쉽 체결</li>
                       <li>
-                        "플라스틱히어로 키오스크" 플라스틱 분쇄 회수기 KC인증
+                        <span className="mobile">-</span> LJ CHEM 전략적
+                        파트너쉽 체결
                       </li>
-                      <li>ALTUS Asia Group MOA 체결</li>
-                      <li>키오스크 관제 s/w 1차 개발 완료</li>
                       <li>
-                        "AI기반 재활용 플라스틱 폐기물 선별 수거시스템"특허 출원
+                        <span className="mobile">-</span> "플라스틱히어로
+                        키오스크" 플라스틱 분쇄 회수기 KC인증
                       </li>
-                      <li>World Show 참가</li>
-                      <li>국가대표 이원희 유도선수 홍보대사 위촉</li>
-                      <li>녹색친구들 MOA체결</li>
-                      <li>"재활용품 선순환시스템, 페트평 회수장치" 특허출원</li>
-                      <li>(주)네오글로벌(일본) MOA체결</li>
-                      <li>(주)인츠(일본) MOA체결</li>
+                      <li>
+                        <span className="mobile">-</span> ALTUS Asia Group MOA
+                        체결
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 키오스크 관제 s/w 1차
+                        개발 완료
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> "AI기반 재활용
+                        플라스틱 폐기물 선별 수거시스템"특허 출원
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> World Show 참가
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 국가대표 이원희
+                        유도선수 홍보대사 위촉
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 녹색친구들 MOA체결
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> "재활용품
+                        선순환시스템, 페트평 회수장치" 특허출원
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> (주)네오글로벌(일본)
+                        MOA체결
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> (주)인츠(일본) MOA체결
+                      </li>
                     </ul>
                     <ul className="second">
                       <li>2022</li>
-                      <li>의식주 컴퍼니와 MOA체결</li>
-                      <li>세계 명품 브랜드상 수상</li>
-                      <li>환경부 장관상 수상(이재영 대표)</li>
-                      <li>플라스틱히어로 1차 APP개발완료</li>
-                      <li>주식회사 에코센트레설립</li>
-                      <li>플라스틱히어로 프로젝트 기획</li>
+                      <li>
+                        <span className="mobile">-</span> 의식주 컴퍼니와
+                        MOA체결
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 세계 명품 브랜드상
+                        수상
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 환경부 장관상
+                        수상(이재영 대표)
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 플라스틱히어로 1차
+                        APP개발완료
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 주식회사
+                        에코센트레설립
+                      </li>
+                      <li>
+                        <span className="mobile">-</span> 플라스틱히어로
+                        프로젝트 기획
+                      </li>
                     </ul>
                   </div>
                 </div>
