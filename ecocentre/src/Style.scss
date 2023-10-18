@@ -3819,6 +3819,7 @@ ul {
         font-weight: 500;
         padding: 10px 20px;
         background-color: white;
+        color: #333;
         border: none;
         outline: 1px solid black;
         border-radius: 10px;
@@ -3826,6 +3827,9 @@ ul {
         @include tablet {
           font-size: 18px;
           padding: 4px 15px;
+        }
+        @include mobile() {
+          font-size: 16px;
         }
       }
     }
