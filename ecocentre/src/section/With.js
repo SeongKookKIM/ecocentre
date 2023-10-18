@@ -19,14 +19,27 @@ function With() {
               <br />
               사용방법안내
             </p>
-            <span>바로가기</span>
+            <span
+              onClick={() => {
+                let app = document.querySelector(".third-banner");
+                app.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              바로가기
+            </span>
           </div>
           <div className="install">
             <p>
               플라스틱 히어로
               <br />앱 설치하기
             </p>
-            <span>바로가기</span>
+            <span
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              바로가기
+            </span>
           </div>
         </div>
       </div>

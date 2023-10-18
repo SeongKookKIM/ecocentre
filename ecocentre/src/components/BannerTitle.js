@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
 import Card from "react-bootstrap/Card";
 
 function CustomToggle({ children, eventKey }) {
-  const decoratedOnClick = useAccordionButton(eventKey, () =>
-    console.log("totally custom!")
-  );
+  const [active, setActive] = useState(false);
+  const [btnActive, setBtnActive] = useState("");
+  const decoratedOnClick = useAccordionButton(eventKey, () => {
+    setActive(!active);
+    if (!active) {
+      setBtnActive("active");
+    } else {
+      setBtnActive("");
+    }
+  });
 
   return (
-    <button
-      type="button"
-      style={{ backgroundColor: "pink" }}
-      onClick={decoratedOnClick}
-    >
+    <button type="button" onClick={decoratedOnClick} className={btnActive}>
       {children}
     </button>
   );
