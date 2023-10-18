@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import newsData from "./data";
-import { useNavigate } from "react-router-dom";
 
 function NewsList() {
   const [selectNews, setSelectNews] = useState(0);
@@ -11,7 +10,10 @@ function NewsList() {
   const commonNews = newsData.filter((item) => item.role === "common");
   const pressNews = newsData.filter((item) => item.role === "press");
 
-  let navigation = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="newslist">
       <div className="newslist-inner">
