@@ -6,8 +6,8 @@ function EsgThird() {
       <div className="hero-title">
         <h4>03</h4>
         <p>
-          ESG 고효율 <br />
-          <span>수거시스템</span>
+          플라스틱 파쇄기술을 통한 <br />
+          <span>고효율 수거 시스템</span>
         </p>
       </div>
       <div className="content">

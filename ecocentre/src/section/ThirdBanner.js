@@ -4,8 +4,7 @@ function ThirdBanner() {
   return (
     <section className="third-banner">
       <div className="bg">
-        <img src="/assets/image/14.jpg" alt="14" />
-        <div className="main-wrapper"></div>
+        <img src="/assets/image/app-bg.jpg" alt="14" />
       </div>
       <div className="banner-content">
         <strong>

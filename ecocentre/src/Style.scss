@@ -1154,6 +1154,8 @@ ul {
     @include tablet {
       max-width: auto;
       width: 90%;
+    }
+    @include mobile() {
       flex-direction: column;
       justify-content: center;
       gap: 30px;
@@ -1173,6 +1175,7 @@ ul {
         @include mobile {
           font-size: 32px;
           line-height: 48px;
+          text-align: center;
         }
       }
       p {
@@ -1667,10 +1670,10 @@ ul {
     position: absolute;
     z-index: 10;
     top: 50%;
-    left: 65%;
+    left: 75%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    @include tablet {
+    @include mobile() {
       left: 50%;
     }
     strong {
@@ -2158,8 +2161,19 @@ ul {
 }
 
 .esg-banner {
-  background: url(../public/assets/image/15.jpg) center center no-repeat;
+  background: url(../public/assets/image/esg-banner.jpg) center center no-repeat;
   background-size: cover;
+  .main-wrapper {
+    display: none;
+  }
+  .main-inner {
+    .content {
+      h2,
+      p {
+        text-shadow: 0 0 10px black;
+      }
+    }
+  }
 }
 
 // ESG

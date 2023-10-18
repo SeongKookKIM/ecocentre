@@ -82,8 +82,8 @@ function App() {
               <Application />
               <SecondBanner
                 title={"ESG DATA"}
-                fTxt={"플라스틱 히어로 ai로봇"}
-                sTxt={"탄소 절감 효과"}
+                fTxt={"우리가 만드는 탄소 절감 효과"}
+                sTxt={"연간 33톤 이산화탄소 배출 억제"}
                 src={""}
                 bg={"esg-banner"}
               />

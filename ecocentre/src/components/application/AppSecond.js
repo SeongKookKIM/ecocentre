@@ -20,9 +20,9 @@ function AppSecond() {
                 <span>01</span>비우기
               </p>
               <span>
-                내용물을 비우고
+                라벨 제거하고
                 <br />
-                라벨을 제거하기
+                내용물 비우기
               </span>
             </div>
           </li>
