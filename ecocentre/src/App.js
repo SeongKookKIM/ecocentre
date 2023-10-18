@@ -21,6 +21,7 @@ import NewsList from "./section/news/NewsList";
 import Send from "./components/Send";
 import Mnav from "./components/Mnav";
 import MSubNav from "./components/MSubNav";
+import ScrollTop from "./ScrollTop";
 
 function App() {
   function setScreenSize() {
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollTop />
       <Routes>
         <Route
           path="/"
