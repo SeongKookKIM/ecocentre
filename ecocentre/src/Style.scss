@@ -403,6 +403,8 @@ ul {
       gap: 30px;
       @include tablet {
         gap: 20px;
+      }
+      @include mobile() {
         justify-content: center;
       }
       button {
@@ -3942,7 +3944,7 @@ ul {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  font-size: 23px;
+  font-size: 18px;
   font-family: $font-NanumSquare;
   font-weight: 800;
   background-color: white;
@@ -3955,12 +3957,12 @@ ul {
     border: none;
   }
   @include tablet {
-    font-size: 20px;
+    font-size: 18px;
     right: 20px;
     bottom: 20px;
   }
   @include mobile() {
-    font-size: 18px;
+    font-size: 16px;
     padding: 4px 10px;
   }
 }
