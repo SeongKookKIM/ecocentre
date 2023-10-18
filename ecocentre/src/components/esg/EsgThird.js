@@ -13,27 +13,21 @@ function EsgThird() {
       <div className="content">
         <ul>
           <li>
-            <div className="text">파쇄효과</div>
-            <div className="inner">
-              <div className="wrapper"></div>
-              <p>
-                1회 운송시 "압축방식" 대비
-                <br />약 소나무 7.3그루 탄소배출 절감 효과
-              </p>
-              <img src="/assets/icon/esg-third.png" alt="03" />
+            <div className="image"></div>
+            <div className="text-wrapper">
+              <div className="text">
+                <p>
+                  “압축방식” 1회 운송 시,
+                  <br />
+                  약 36.6 Kg의 탄소배출억제효과
+                  <br />
+                  <span>(500ml PET - 800개)</span>
+                </p>
+              </div>
+              <div className="image"></div>
             </div>
           </li>
-          <li>
-            <div className="text">파쇄효과</div>
-            <div className="inner">
-              <div className="wrapper"></div>
-              <p>
-                1회 운송시 "압축방식" 대비
-                <br />약 소나무 7.3그루 탄소배출 절감 효과
-              </p>
-              <img src="/assets/icon/esg-third.png" alt="03" />
-            </div>
-          </li>
+          <li></li>
         </ul>
       </div>
     </div>
