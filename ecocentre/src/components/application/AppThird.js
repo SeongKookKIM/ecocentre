@@ -22,7 +22,7 @@ function AppThird() {
             <br />
             기프티콘 구매와
             <br />
-            환경포인트 기부
+            사회단체 기부
           </p>
         </div>
         <div className="phone-img">

@@ -14,7 +14,6 @@ function EsgFirst() {
             <br />
             236.28그루 심는 효과
           </span>
-          <img src="/assets/image/ai-robot.png" alt="ai" />
         </div>
         <div className="content-big">
           <img src="/assets/image/16.jpg" alt="16" />

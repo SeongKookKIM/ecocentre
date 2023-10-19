@@ -62,6 +62,9 @@ function Stroy() {
                   exit={{
                     opacity: 0,
                   }}
+                  transition={{
+                    duration: 2,
+                  }}
                   className="story-content"
                 >
                   <div className="story-img">
@@ -86,6 +89,9 @@ function Stroy() {
                   exit={{
                     opacity: 0,
                   }}
+                  transition={{
+                    duration: 2,
+                  }}
                   className="story-content"
                 >
                   <div className="story-img">
@@ -109,6 +115,9 @@ function Stroy() {
                   }}
                   exit={{
                     opacity: 0,
+                  }}
+                  transition={{
+                    duration: 2,
                   }}
                   className="story-content"
                 >
