@@ -41,20 +41,16 @@ function AppThird() {
       <div className="third-list">
         <ul>
           <li>
-            <img src="/assets/icon/app-list01.png" alt="app-list-1" />
-            <span>기프티콘 구매</span>
+            <img src="/assets/image/app/03-1.png" alt="01" />
           </li>
           <li>
-            <img src="/assets/icon/app-list02.png" alt="app-list-2" />
-            <span>환경포인트 기부</span>
+            <img src="/assets/image/app/03-2.png" alt="02" />
           </li>
           <li>
-            <img src="/assets/icon/app-list03.png" alt="app-list-3" />
-            <span>교육프로그램</span>
+            <img src="/assets/image/app/03-3.png" alt="03" />
           </li>
           <li>
-            <img src="/assets/icon/app-list04.png" alt="app-list-4" />
-            <span>환경 캠페인</span>
+            <img src="/assets/image/app/03-4.png" alt="04" />
           </li>
         </ul>
       </div>

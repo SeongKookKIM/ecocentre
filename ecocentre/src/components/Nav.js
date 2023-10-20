@@ -49,7 +49,7 @@ function Nav() {
                 hero.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              플라스틱히어로
+              AI로봇
             </span>
           </li>
           <li>
@@ -59,7 +59,7 @@ function Nav() {
                 app.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              App
+              모바일 앱
             </span>
           </li>
           <li>
@@ -69,19 +69,10 @@ function Nav() {
                 esg.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              ESG
+              ESG Data
             </span>
           </li>
-          <li>
-            <span
-              onClick={() => {
-                let news = document.querySelector(".news");
-                news.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              소식
-            </span>
-          </li>
+
           <li>
             <span
               onClick={() => {

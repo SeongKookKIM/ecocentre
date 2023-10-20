@@ -28,11 +28,7 @@ function Footer() {
           </div>
           <p>본사: 서울특별시 강남구 논현로 97길 19-4</p>
         </div>
-        <div className="use-info">
-          <p>
-            <span>이용약관</span> | <span>개인정보처리방침</span>
-          </p>
-        </div>
+
         <div className="copy">
           <span>&copy; Copyright 2023 by Ecocentre</span>
         </div>

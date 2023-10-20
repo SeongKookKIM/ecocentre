@@ -15,10 +15,7 @@ function HeroSlide() {
     <Swiper
       spaceBetween={20}
       centeredSlides={true}
-      autoplay={{
-        delay: 4000,
-        disableOnInteraction: false,
-      }}
+      autoplay={false}
       pagination={{
         type: "progressbar",
       }}
@@ -35,6 +32,9 @@ function HeroSlide() {
       </SwiperSlide>
       <SwiperSlide>
         <img src="assets/image/hero/hero04-03.jpg" alt="hero04-03" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="assets/image/hero/hero04-04.jpg" alt="hero04-04" />
       </SwiperSlide>
     </Swiper>
   );

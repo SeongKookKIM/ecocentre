@@ -41,15 +41,7 @@ function OffCanvasExample({ name, ...props }) {
             >
               Home
             </li>
-            <li
-              onClick={() => {
-                handleClose();
-                navigate("/news");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              소식
-            </li>
+
             <li
               onClick={() => {
                 handleClose();

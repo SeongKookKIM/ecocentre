@@ -28,16 +28,7 @@ function SubNav() {
               Home
             </span>
           </li>
-          <li>
-            <span
-              onClick={() => {
-                navigation("/news");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              소식
-            </span>
-          </li>
+
           <li>
             <span
               onClick={() => {

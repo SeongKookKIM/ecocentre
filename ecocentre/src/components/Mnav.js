@@ -46,7 +46,7 @@ function OffCanvasExample({ name, ...props }) {
                 hero.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              플라스틱히어로
+              AI로봇
             </li>
             <li
               onClick={() => {
@@ -55,7 +55,7 @@ function OffCanvasExample({ name, ...props }) {
                 app.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              App
+              모바일 앱
             </li>
             <li
               onClick={() => {
@@ -64,17 +64,9 @@ function OffCanvasExample({ name, ...props }) {
                 esg.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              ESG
+              ESG Data
             </li>
-            <li
-              onClick={() => {
-                handleClose();
-                let news = document.querySelector(".news");
-                news.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              소식
-            </li>
+
             <li
               onClick={() => {
                 handleClose();

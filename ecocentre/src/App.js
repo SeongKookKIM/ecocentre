@@ -104,7 +104,6 @@ function App() {
                 bg={"bg"}
               />
               <Esg />
-              <News />
               <Faq />
               <With />
               <WithBanner />

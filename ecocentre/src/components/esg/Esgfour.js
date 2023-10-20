@@ -13,7 +13,7 @@ function Esgfour() {
       </div>
       <div className="content">
         <div className="img">
-          <img src="/assets/image/ai-robot.png" alt="ai" />
+          <img src="/assets/image/esg/robot-front.png" alt="ai" />
         </div>
         <div className="inner">
           <ul>
@@ -26,10 +26,10 @@ function Esgfour() {
                 />
               </div>
               <div className="main-text">
-                <div className="main-text-img">
-                  <img src="/assets/image/22.jpg" alt="22" />
+                <div className="text-icon">
+                  <img src="/assets/image/esg/esg04-01.png" alt="01" />
                 </div>
-                <div className="main-text-content">
+                <div className="text-content">
                   <strong>1PET</strong>
                   <span>플라스틱히어로 환경포인트 80~100P(원)</span>
                 </div>
@@ -44,10 +44,10 @@ function Esgfour() {
                 />
               </div>
               <div className="main-text">
-                <div className="main-text-img">
-                  <img src="/assets/image/23.jpg" alt="23" />
+                <div className="text-icon">
+                  <img src="/assets/image/esg/esg04-02.png" alt="02" />
                 </div>
-                <div className="main-text-content">
+                <div className="text-content">
                   <strong>1일 1인 3회 용기 반환</strong>
                   <span>900PET X 80~100P(원) = 72,000~90,000P(원)</span>
                 </div>
@@ -62,11 +62,11 @@ function Esgfour() {
                 />
               </div>
               <div className="main-text">
-                <div className="main-text-img">
-                  <img src="/assets/image/24.jpg" alt="24" />
+                <div className="text-icon">
+                  <img src="/assets/image/esg/esg04-03.png" alt="03" />
                 </div>
-                <div className="main-text-content">
-                  <strong>1개월간 기업 사회환원금액</strong>
+                <div className="text-content">
+                  <strong>1개월간 기업 사회환원금액 </strong>
                   <span>2,160,000~2,700,000P(원)</span>
                 </div>
               </div>

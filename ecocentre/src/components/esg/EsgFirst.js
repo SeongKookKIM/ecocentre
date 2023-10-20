@@ -10,13 +10,18 @@ function EsgFirst() {
       <div className="content-wrapper">
         <div className="content-small">
           <span>
-            플라스틱히어로 AI 로봇 1대당
+            플라스틱히어로가
             <br />
-            236.28그루 심는 효과
+            만들어가는 탄소중립 세상
           </span>
         </div>
         <div className="content-big">
-          <img src="/assets/image/16.jpg" alt="16" />
+          <img src="/assets/image/esg01-01.jpg" alt="16" />
+          <p>
+            플라스틱히어로 AI 로봇 1대당
+            <br />
+            연간 <span>236.28그루</span> 심는효과
+          </p>
         </div>
       </div>
       <div className="first-footer">
