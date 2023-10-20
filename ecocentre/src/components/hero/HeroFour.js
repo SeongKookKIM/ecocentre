@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeroSlide from "./HeroSlide";
 
 function HeroFour() {
   const [check, setCheck] = useState(false);
@@ -20,12 +21,13 @@ function HeroFour() {
         <h4>04</h4>
         <p>
           플라스틱히어로 <br />
-          <span>포트폴리오</span>
+          <span>AI로봇</span>
         </p>
       </div>
       <div className="content-wrapper">
         <div className="content-image">
-          <img src="/assets/image/13.jpg" alt="13" />
+          {/* <img src="/assets/image/13.jpg" alt="13" /> */}
+          <HeroSlide />
         </div>
       </div>
       <div className="ai-robot">

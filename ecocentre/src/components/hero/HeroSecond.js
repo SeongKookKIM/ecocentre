@@ -17,9 +17,11 @@ function HeroSecond() {
         <div className="content-small">
           <img src="/assets/icon/down.png" alt="down" />
           <span>
-            최대 5배 효율적인 수거로
+            파쇄기술을 통해 더 많은 양을
             <br className="mobile" />
-            탄소 배출 절감 효과가 있습니다.
+            저장할 수 있으며, 제반비용이
+            <br className="mobile" />
+            절감되는 효과가 있습니다.
           </span>
         </div>
       </div>

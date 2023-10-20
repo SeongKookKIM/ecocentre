@@ -22,7 +22,7 @@ function CustomToggle({ children, eventKey }) {
   );
 }
 
-function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
+function BannerTitle({ title, ftext, stext, ttext, fourtext, btnhide, bg }) {
   return (
     <section className={`banner-title ${bg}`}>
       <h2>{title}</h2>
@@ -32,6 +32,8 @@ function BannerTitle({ title, ftext, stext, ttext, btnhide, bg }) {
         {stext}
         <br className="mobile" />
         {ttext}
+        <br className="mobile" />
+        {fourtext}
       </p>
       {btnhide && (
         <Accordion defaultActiveKey="0">

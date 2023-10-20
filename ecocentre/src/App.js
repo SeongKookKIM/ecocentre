@@ -41,28 +41,32 @@ function App() {
               <Nav />
               <Mnav />
               <Main />
-              <BannerTitle
-                title={"우리가 하는 일"}
-                ftext={"에코센트레는 한경오염 대책을 위해 폐플라스틱을 "}
-                stext={
-                  "재생산하는 리사이클링 사업과 이를 위한 플랫폼 제공으로 "
-                }
-                ttext={"탄소중립 세상을 만들고자 합니다"}
-                btnhide={true}
-                bg={""}
-              />
               <Stroy />
+              <BannerTitle
+                title={"에코센트레 RECYCLE"}
+                ftext={"플라스틱히어로 AI 로봇을 통해 확보된 순환자원들은"}
+                stext={
+                  "가공되어 사용될 용도에 따라 중합소재, 난연소재, 전도성 소재와"
+                }
+                ttext={
+                  "복합기능 소재 등 특수한 기능을  가지고 있는 우리 생활에"
+                }
+                fourtext={"필요한 플라스틱 제품으로 다시 만들어집니다. "}
+                btnhide={true}
+                bg={"bg"}
+              />
               <Recycle />
               <SecondBanner
-                title={"플라스틱 히어로"}
-                fTxt={"이젠 버리지 말고 "}
-                sTxt={"플라스틱히어로가 되어주세요"}
+                title={"플라스틱히어로 AI 로봇"}
+                fTxt={"언제 어디서나 페트병을 수거하기 위해"}
+                sTxt={"항상 여러분 곁에 있습니다. 플라스틱히어로와"}
+                tTxt={"함께 환경을 살리고 포인트도 받아보세요!"}
                 src={"/assets/image/ai-robot.png"}
               />
               <BannerTitle
-                title={"플라스틱히어로의 뜻"}
-                ftext={"일상에서 사용하는 생활 플라스틱 AI 회수로봇인 "}
-                stext={"플라스틱히어로는 환경오염이 심각한 지구에서 "}
+                title={"플라스틱히어로 AI 로봇은 무엇인가요? "}
+                ftext={"일상에서 사용하는 생활 플라스틱 AI 회수로봇인"}
+                stext={"플라스틱히어로는 환경오염이 심각한 지구에서"}
                 ttext={"영웅이 된다는 의미를 가지고 있습니다."}
                 btnhide={false}
                 bg={"bg"}

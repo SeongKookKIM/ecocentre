@@ -1,6 +1,6 @@
 import React from "react";
 
-function SecondBanner({ title, fTxt, sTxt, src, bg }) {
+function SecondBanner({ title, fTxt, sTxt, tTxt, bg }) {
   return (
     <section className={`second-banner ${bg}`}>
       <div className="main-wrapper"></div>
@@ -11,13 +11,10 @@ function SecondBanner({ title, fTxt, sTxt, src, bg }) {
             {fTxt}
             <br />
             {sTxt}
+            <br />
+            {tTxt}
           </p>
         </div>
-        {src && (
-          <div className="img">
-            <img src={src} alt="robot" />
-          </div>
-        )}
       </div>
       <div className="arrow">
         <img src="/assets/icon/scroll.png" alt="scroll" />

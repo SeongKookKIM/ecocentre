@@ -20,10 +20,9 @@ function HeroFirst() {
           <img src="/assets/icon/iot.png" alt="iot" />
         </div>
         <div className="content-big">
-          <img src="/assets/image/10.jpg" alt="10" />
+          <img src="/assets/image//hero/hero01.jpg" alt="hero01" />
         </div>
       </div>
-      <div className="first-footer"></div>
     </div>
   );
 }
