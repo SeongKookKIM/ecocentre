@@ -29,7 +29,7 @@ function Send() {
               <label>이름</label>
               <input
                 type="text"
-                name="user_name"
+                name="name"
                 placeholder="이름을 입력해주세요."
               />
             </div>
@@ -37,7 +37,7 @@ function Send() {
               <label>핸드폰번호</label>
               <input
                 type="number"
-                name="user_phone"
+                name="phone"
                 placeholder="-없이 숫자만 입력해주세요."
               />
             </div>
@@ -45,7 +45,7 @@ function Send() {
               <label>이메일</label>
               <input
                 type="email"
-                name="user_email"
+                name="email"
                 placeholder="예시: abc123@gmail.com"
               />
             </div>
@@ -56,6 +56,7 @@ function Send() {
                 placeholder="문의 내용을 입력해주세요."
               ></textarea>
             </div>
+            <input type="text" name="date" style={{ display: "none" }} />
             <input type="submit" value="보내기" />
           </form>
         </Modal.Body>

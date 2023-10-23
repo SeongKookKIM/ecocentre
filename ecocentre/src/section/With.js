@@ -12,7 +12,7 @@ function With() {
             환경을 지켜주세요.
           </h2>
         </div>
-        <div className="contnet">
+        <div className="content">
           <div className="use">
             <p>
               플라스틱 히어로

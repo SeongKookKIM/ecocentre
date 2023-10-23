@@ -48,7 +48,16 @@ function SubNav() {
 
             <Dropdown.Menu>
               <Dropdown.Item href="#/action-1">한국어</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">ENGLISH</Dropdown.Item>
+              <Dropdown.Item
+                href="#/action-2"
+                style={{
+                  backgroundColor: "#d3d3d3",
+                  color: "rgb(107, 118, 132)",
+                  pointerEvents: "none",
+                }}
+              >
+                ENGLISH
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
