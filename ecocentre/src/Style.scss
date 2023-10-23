@@ -813,55 +813,69 @@ ul {
       }
       .story-list {
         margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        @include tablet {
-          margin-top: 40px;
-          flex-direction: row;
-          flex-wrap: wrap;
+        @include mobile() {
+          margin-top: 20px;
         }
-        span {
-          font-size: 24px;
-          font-family: $font-Pretendard;
-          font-weight: 600;
-          color: rgba(0, 0, 0, 0.5);
-          position: relative;
-          cursor: pointer;
-          @include tablet {
-            font-size: 18px;
+        .dropdown {
+          width: 100%;
+          @include tablet() {
+            width: 400px;
+          }
+          @include mobile() {
+            width: 100%;
+          }
+          .dropdown-toggle {
+            width: 100%;
+            background-color: #f9fafb;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 19px;
+            font-family: $font-NanumSquare;
+            font-weight: 800;
+            color: #333;
+            @include flexCenter();
             border: 1px solid #d3d3d3;
-            padding: 6px 10px;
-            border-radius: 7px;
-            background-color: white;
-          }
-          @include mobile {
-            font-size: 16px;
-            padding: 4px 10px;
-          }
-        }
-        span.active {
-          color: #333;
-          &::before {
-            content: "";
-            width: 200%;
-            height: 5px;
-            background-color: #19984b;
-            position: absolute;
-            right: 103%;
-            top: 50%;
-            transform: translateY(-50%);
-            border-radius: 5px;
-            @include tablet {
-              display: none;
+            &::after {
+              border-top: 0.5em solid;
+              border-right: 0.5em solid transparent;
+              border-bottom: 0;
+              border-left: 0.5em solid transparent;
+              margin-left: 10px;
+            }
+            @include tablet() {
+              font-size: 17px;
+              padding: 6px 10px;
+              &::after {
+                border-top: 0.4em solid;
+                border-right: 0.4em solid transparent;
+                border-bottom: 0;
+                border-left: 0.4em solid transparent;
+              }
+            }
+            @include mobile() {
+              font-size: 16px;
             }
           }
-          @include tablet {
-            background-color: #333;
-            color: #fff;
-          }
-          @include mobile {
-            font-weight: 500;
+          .dropdown-menu {
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+            button {
+              width: 100%;
+              font-size: 18px;
+              font-family: $font-NanumSquare;
+              font-weight: 700;
+              text-align: center;
+              padding: 10px 0;
+              @include tablet() {
+                font-size: 16px;
+                padding: 7px;
+              }
+              @include mobile() {
+                font-size: 15px;
+              }
+            }
           }
         }
       }
