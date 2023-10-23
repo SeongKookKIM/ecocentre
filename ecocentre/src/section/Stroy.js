@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 
 function Stroy() {
   const [storyNum, setStoryNum] = useState(1);
-  const [storyTitle, setStoryTitle] = useState(
-    "K-순환경제 이행을 위한 정책토론회"
-  );
 
   return (
     <section className="story">
@@ -27,35 +22,30 @@ function Stroy() {
             환경보호에 대한 인식을 높이기 위해 노력합니다.
           </p>
           <div className="story-list">
-            <DropdownButton id="dropdown-item-button" title={storyTitle}>
-              <Dropdown.Item
-                as="button"
-                onClick={() => {
-                  setStoryNum(1);
-                  setStoryTitle("K-순환경제 이행을 위한 정책토론회");
-                }}
-              >
-                K-순환경제 이행을 위한 정책토론회
-              </Dropdown.Item>
-              <Dropdown.Item
-                as="button"
-                onClick={() => {
-                  setStoryNum(2);
-                  setStoryTitle("2023 월드 IT 쇼");
-                }}
-              >
-                2023 월드 IT 쇼
-              </Dropdown.Item>
-              <Dropdown.Item
-                as="button"
-                onClick={() => {
-                  setStoryNum(3);
-                  setStoryTitle("플라스틱히어로 ESG경영포럼");
-                }}
-              >
-                플라스틱히어로 ESG경영포럼
-              </Dropdown.Item>
-            </DropdownButton>
+            <span
+              className={storyNum === 1 ? "active" : ""}
+              onClick={() => {
+                setStoryNum(1);
+              }}
+            >
+              K-순환경제 이행을 위한 정책토론회
+            </span>
+            <span
+              className={storyNum === 2 ? "active" : ""}
+              onClick={() => {
+                setStoryNum(2);
+              }}
+            >
+              2023 월드 IT 쇼
+            </span>
+            <span
+              className={storyNum === 3 ? "active" : ""}
+              onClick={() => {
+                setStoryNum(3);
+              }}
+            >
+              플라스틱히어로 ESG경영포럼
+            </span>
           </div>
         </div>
         <div className="story-slide">

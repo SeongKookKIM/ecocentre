@@ -9,9 +9,9 @@ function SecondBanner({ title, fTxt, sTxt, tTxt, bg }) {
           <h2>{title}</h2>
           <p>
             {fTxt}
-            <br />
+            <br className="mobile" />
             {sTxt}
-            <br />
+            <br className="mobile" />
             {tTxt}
           </p>
         </div>

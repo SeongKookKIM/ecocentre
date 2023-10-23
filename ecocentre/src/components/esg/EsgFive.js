@@ -13,7 +13,7 @@ function EsgFive() {
       </div>
       <div className="content">
         <div className="donation">
-          <p>한 해 사회적기부가능예상금액</p>
+          <p>한 해 사회적 기부 가능 예상금액</p>
           <span>2,592,000P ~ 3,240,000P(원)</span>
         </div>
         <img src="/assets/icon/esg-arrow.png" alt="arrow" className="arrow" />
