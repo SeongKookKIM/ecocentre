@@ -160,6 +160,9 @@ function Recycle() {
             <li>
               <img src="/assets/image/recycle/recycle04-01.png" alt="01" />
             </li>
+            <li className="arrow">
+              <img src="/assets/image/recycle/arrow.svg" alt="arrow" />
+            </li>
             <li>
               <img src="/assets/image/recycle/recycle04-02.png" alt="02" />
             </li>
@@ -168,9 +171,6 @@ function Recycle() {
             </li>
             <li>
               <img src="/assets/image/recycle/recycle04-04.png" alt="04" />
-            </li>
-            <li>
-              <img src="/assets/image/recycle/recycle04-05.png" alt="05" />
             </li>
           </ul>
         </div>
