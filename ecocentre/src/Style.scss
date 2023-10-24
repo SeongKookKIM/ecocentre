@@ -3848,9 +3848,11 @@ ul {
   font-weight: 800;
   background-color: white;
   color: #333;
-  border: 1px solid #333;
   outline: none;
   border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  border: none;
+  outline: none;
   &:hover {
     background-color: #19984b;
     border: none;
@@ -3998,9 +4000,10 @@ ul {
             border-radius: 10px;
             cursor: pointer;
             font-family: $font-NanumSquare;
+            font-weight: 800;
             font-size: 18px;
             margin: 0 auto;
-            background-color: #d3d3d3;
+            background-color: #f9fafb;
             color: #333;
           }
         }

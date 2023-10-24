@@ -20,7 +20,7 @@ function EsgSecond() {
             <img src="/assets/image/esg/esg02-02.png" alt="02" />
           </li>
           <li>
-            <img src="/assets/image/esg/esg02-02.png" alt="02" />
+            <img src="/assets/image/esg/esg02-03.png" alt="03" />
           </li>
         </ul>
       </div>
