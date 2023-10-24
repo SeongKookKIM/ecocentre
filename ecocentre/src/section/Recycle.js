@@ -21,7 +21,7 @@ function Recycle() {
               활동에 참여할 수 있습니다.
             </h2>
             <p>
-              ‘플라스틱히어로 AI로봇’에 폐플라스틱을 투입하여
+              ‘플라스틱히어로 AI로봇’에 폐플라스틱을 투입하여&nbsp;
               <br className="mobile" />
               지구를 지키는 활동에 참여할 수 있습니다.
             </p>
@@ -59,7 +59,7 @@ function Recycle() {
               <span>직접 수거</span>합니다.
             </h2>
             <p>
-              실시간 모니터링을 통해 수거량을
+              실시간 모니터링을 통해 수거량을&nbsp;
               <br className="mobile" />
               확인하며, 직접 방문하여 시민 참여로 <br className="mobile" />
               이루어진 폐플라스틱을 수거 합니다.
@@ -101,7 +101,7 @@ function Recycle() {
               소재를 <span>개발 및 생산</span>합니다.
             </h2>
             <p>
-              ‘플라스틱히어로 AI로봇’에 수거된 폐플라스틱으로
+              ‘플라스틱히어로 AI로봇’에 수거된 폐플라스틱으로&nbsp;
               <br className="mobile" />
               친환경 소재를 개발 및 생산합니다.
             </p>
