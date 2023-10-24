@@ -152,7 +152,7 @@ function Recycle() {
             </p>
           </div>
           <div className="left-img">
-            <img src="/assets/image/recycle/recycle04.png" alt="재생산" />
+            <img src="/assets/image/recycle/recycle04.jpg" alt="재생산" />
           </div>
         </div>
         <div className="recycle-icon">
